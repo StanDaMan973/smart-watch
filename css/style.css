@@ -1,10 +1,184 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans&display=swap');
 
 
-/* #FEEBE2 */
-#cover {
 
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
 
 }
+
+.row {
+    height: 100%;
+}
+
+.blue-button {
+
+/* background-color: #43bccd; */
+
+}
+
+
+/*********** global variables **************/
+
+
+#cover {
+    height: 700px;
+    width: 100%;
+    background-color: #43bccd;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+header #navbar {
+    width: 100%;
+}
+
+header #navbar ul {
+    display: flex;
+    position: relative;
+    top: 55px;
+    justify-content: flex-end;
+    
+}
+
+header #navbar ul li #home {
+    color: #000000;
+    border-bottom: 1px solid #f9ca24;
+}
+
+header #navbar ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: #ffffff;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+}
+
+header #navbar ul li a:hover {
+    color: #000000;
+    border-bottom: 1px solid #f9ca24;
+}
+
+header img {
+    width: 100px;
+}
+
+.cover-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cover-box {
+    position: relative;
+    padding: 0 14% 0 0;
+    top: 120px;  
+}
+
+.cover-box h2 {
+    color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    width: 80%;
+    letter-spacing: 2px;
+    
+}
+
+.cover-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    padding-bottom: 20px;
+    line-height: 2rem;
+
+}
+
+.cover-box .blue-button {
+    background-color: #f2f2f2;
+    display: inline-block;
+    border-radius: 25px;
+    position: relative;
+    height: 3rem;
+    padding: 0.50rem 2.5rem;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-box {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.img-box img {
+    width: 500px;
+}
+
+/****************** about **********************/
+
+
+#about {
+    background-color: #f2f2f2;
+}
+
+#about .about-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    
+}
+
+#about .img-box {
+    margin: 0 auto;
+}
+
+#about .img-box img {
+    width: 550px;
+    margin-left: -60px;
+}
+
+
+#about .about-box {
+    position: relative;
+    top: 100px;
+}
+
+#about .about-box h3 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+#about .about-box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
