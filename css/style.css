@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans&display=swap');
 
 
-
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Lato', sans-serif; */
-
-
-
-
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -22,7 +15,7 @@ font-family: 'Lato', sans-serif; */
 
 .blue-button {
 
-/* background-color: #43bccd; */
+    /* background-color: #43bccd; */
 
 }
 
@@ -40,6 +33,7 @@ header {
     width: 100%;
     display: flex;
 }
+
 header #navbar {
     width: 100%;
 }
@@ -49,7 +43,7 @@ header #navbar ul {
     position: relative;
     top: 55px;
     justify-content: flex-end;
-    
+
 }
 
 header #navbar ul li #home {
@@ -84,7 +78,7 @@ header img {
 .cover-box {
     position: relative;
     padding: 0 14% 0 0;
-    top: 120px;  
+    top: 120px;
 }
 
 .cover-box h2 {
@@ -95,7 +89,7 @@ header img {
     padding-bottom: 20px;
     width: 80%;
     letter-spacing: 2px;
-    
+
 }
 
 .cover-box p {
@@ -149,7 +143,7 @@ header img {
 #about .about-column {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
-    
+
 }
 
 #about .img-box {
@@ -182,3 +176,69 @@ header img {
     line-height: 26px;
 }
 
+/* technologies  */
+
+#tech {
+    height: 550px;
+    background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
+        url('/img/smartwatch-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#tech .tech-box {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#tech .tech-box h3 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#tech .tech-box p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    font-weight: 100;
+    margin-bottom: 30px;
+    padding: 0 120px;
+    line-height: 24px;
+}
+
+#tech .tech-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#tech .tech-column .box {
+    padding: 10px 10px;
+}
+
+#tech .tech-column .box i {
+    color: #f9ca24;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+#tech .tech-column .box span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+#tech .tech-column .box p {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    font-weight: 300;
+    line-height: 25px;
+   
+}
