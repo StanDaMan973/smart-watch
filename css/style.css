@@ -9,12 +9,15 @@
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .row {
     height: 100%;
 }
 
 .blue-button {
-
     background-color: #43bccd;
     color: #f2f2f2;
     display: inline-block;
@@ -58,7 +61,7 @@ header #navbar {
 header #navbar ul {
     display: flex;
     position: relative;
-    top: 55px;
+    top: 40px;
     justify-content: flex-end;
 
 }
@@ -84,7 +87,8 @@ header #navbar ul li a:hover {
 }
 
 header img {
-    width: 100px;
+    margin-top: 10px;
+    width: 60px;
 }
 
 .cover-column {
@@ -140,15 +144,15 @@ header img {
     cursor: pointer;
 }
 
-.img-box {
-    margin-top: 40px;
+.cover-column .img-box {
+    margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-.img-box img {
-    width: 500px;
+.cover-column .img-box img {
+    width: 600px;
 }
 
 /****************** about **********************/
@@ -156,6 +160,8 @@ header img {
 
 #about {
     background-color: #f2f2f2;
+    height: 500px;
+    padding-bottom: 20px;
 }
 
 #about .about-column {
@@ -169,14 +175,14 @@ header img {
 }
 
 #about .img-box img {
-    width: 550px;
+    width: 400px;
     margin-left: -60px;
+    margin-top: 65px;
 }
 
 
 #about .about-box {
-    position: relative;
-    top: 100px;
+   margin-top: 20%;
 }
 
 #about .about-box h3 {
@@ -296,8 +302,12 @@ header img {
 
 }
 
-#quick .img-column .img-box img {
+#quick .img-column .img-box  {
     margin-left: 10%;
+    margin-top: 20%;
+}
+
+#quick .img-column .img-box img { 
     width: 540px;
 }
 
@@ -339,14 +349,12 @@ header img {
 }
 
 #instant .img-column .img-box {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 15%;
+    margin-left: 20%;
 }
 
 #instant .img-column .img-box img {
-    margin-left: -4%;
-    width: 500px;
+    width: 300px;
 }
 
 
@@ -385,14 +393,17 @@ header img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 
 #feature-1 .feature-1-column .img-box {
-    margin-top: -35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -2%;
+    margin-left: 20%;
+}
+
+#feature-1 .feature-1-column .img-box img {
+    width: 300px;
 }
 
 #feature-1 .feature-1-column .box-column {
@@ -434,7 +445,7 @@ header img {
 
 #feature-2 {
     background: #e9eced;
-    height: 750px;
+    height: 800px;
 }
 
 #feature-2 .feature-2-box {
@@ -470,10 +481,15 @@ header img {
 
 
 #feature-2 .feature-2-column .img-box {
-    margin-top: -35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
 }
+
+#feature-2 .feature-2-column .img-box img {
+   width: 300px;
+    
+}
+
 
 #feature-2 .feature-2-column .box-column-1 {
     display: grid;
@@ -548,3 +564,252 @@ header img {
 
 
 /* gallery */
+
+#gallery {
+    position: relative;
+    background-color: #e9eced;
+    height: 550px;
+}
+
+#gallery .row {
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+
+#gallery .trapeze-gallery-bg {
+    position: absolute;
+    top: -5px;
+    left: -17%;
+    width: 70%;
+    height: 100%;
+    background-color: #e9eced;
+    transform: skewX(-7deg);
+    z-index: 5;
+}
+
+#gallery  .gallery-content {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 25rem;
+    padding: 70px 15px 0 15px;
+    text-align: left;
+    z-index: 5;
+}
+
+#gallery  .gallery-content h2 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#gallery  .gallery-content p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+
+    
+}
+
+#gallery  .gallery-content .gallery-list li {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  
+}
+
+
+#gallery  .gallery-content .gallery-list li i {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+    color: #f9ca24
+    
+}
+
+
+
+#gallery  .gallery-content  .gallery-list {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#gallery .gallery-img {
+    background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
+    url('/img/smartwatch-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    float: right;
+    width: 65%;
+    right: 0;
+    height: 544px;
+    padding: 0;
+}
+
+
+
+#gallery .gallery-img  .flex-caption-box  {
+    position: relative;
+    left: 10.5rem;
+    top: 4.5rem;
+    width: 100%;
+    float: left;
+    display: block;
+    z-index: 1;
+}
+
+#gallery .gallery-img  .flex-caption-box .flex-caption {
+    position: absolute;
+    left: 7rem;
+    top: 0.5rem;
+    color: #ffffff;
+    z-index: 100;
+    max-width: 500px
+}
+
+#gallery .gallery-img .flex-caption-box .flex-caption h3 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#gallery .gallery-img .flex-caption-box .flex-caption span {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f9ca24;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#gallery .gallery-img .flex-caption-box .flex-caption p {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    max-width: 50%;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+/************* products ********************/
+
+#products {
+    background-color: #f2f2f2;
+    height: 800px;
+}
+
+#products .product-box {
+    padding-top: 60px;
+}
+
+#products .product-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#products .product-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#products  .product {
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    width: 30%;
+    padding: 0 18px;
+}
+
+#products .product .product-block {
+    position: relative;
+    background-color: #e9eced;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+#products .product .product-block .product-bg {
+    background-color: #43bccd;
+    position: absolute;
+    top: -3rem;
+    left: 0px;
+    width: 100%;
+    height: 18rem;
+    -webkit-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -ms-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    overflow: hidden;
+    z-index: 0;
+}
+
+#products .product .product-block .product-content {
+    position: relative;
+    z-index: 1;
+}
+
+#products .product .product-block .product-content h3 {
+     font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0 0 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#products .product .product-block .product-content .version {
+    color: #a8e0e8;
+}
+
+#products .product .product-block .product-content  span {
+    position: relative;
+    padding: 0 5px;
+    font-size: 1.953rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+#products .product .product-block .product-content .product-img {
+    margin: 1.5rem 0 0 0;
+}
+
+#products .product .product-block .product-content .product-img img {
+    display: inline-block;
+    text-align: center;
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+#products .product .product-block .product-content  .bnt-block {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
