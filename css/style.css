@@ -856,7 +856,7 @@ header img {
     background-color: #e9eced;
     padding: 2rem 0;
     overflow: hidden;
-   
+
 }
 
 #products-2 .product .product-block .product-bg {
@@ -964,7 +964,7 @@ header img {
     background-color: #e9eced;
     padding: 3rem 0;
     overflow: hidden;
-      
+
 }
 
 #sale .product .product-block .product-bg {
@@ -1021,7 +1021,7 @@ header img {
 }
 
 #sale .product .product-block .product-sale-img .product-sale-container img {
-  width: 250px;
+    width: 250px;
 }
 
 #sale .product .product-block .product-sale-content {
@@ -1030,12 +1030,12 @@ header img {
     padding: 0 0 0 45%;
 }
 
-#sale .product .product-block .product-sale-content  .product-info {
+#sale .product .product-block .product-sale-content .product-info {
     padding: 0 3rem 0 3rem;
 }
 
 
-#sale .product .product-block .product-sale-content  .product-info h3 {
+#sale .product .product-block .product-sale-content .product-info h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -1044,7 +1044,7 @@ header img {
     text-transform: uppercase;
 }
 
-#sale .product .product-block .product-sale-content  .product-info span {
+#sale .product .product-block .product-sale-content .product-info span {
     position: relative;
     padding: 0;
     font-size: 1.953rem;
@@ -1052,27 +1052,217 @@ header img {
     font-weight: 700;
 }
 
-#sale .product .product-block .product-sale-content  .product-info .version {
+#sale .product .product-block .product-sale-content .product-info .version {
     color: #a2a2a2;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.5rem;
 }
 
-#sale .product .product-block .product-sale-content  .product-info .sale {
+#sale .product .product-block .product-sale-content .product-info .sale {
     padding: 0 5px;
     font-family: 'Montserrat', sans-serif;
 }
 
-#sale .product .product-block .product-sale-content  .product-info .sale-price {
+#sale .product .product-block .product-sale-content .product-info .sale-price {
     color: #f9c80e;
     font-family: 'Montserrat', sans-serif;
 }
 
-#sale .product .product-block .product-sale-content  .product-info .text {
+#sale .product .product-block .product-sale-content .product-info .text {
     padding-top: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
     font-size: 16px;
+}
+
+/**************** video-loaded ***************************/
+
+
+.video-loaded {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background-color: #e9eced;
+    background: url('/img/smartwatch-bg.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.video-loaded .overlay-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333e50;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.video-loaded .play {
+    position: relative;
+    text-align: center;
+    width: 40px;
+    margin: 190px auto 0;
+    z-index: 10;
+    top: 200px;
+}
+
+.video-loaded .play a{
+    color: #43bccd;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.video-loaded .play a .im-play {
+    font-size: 4rem;
+}
+
+
+/* FAQ */
+
+#FAQ {
+    background-color: #e9eced;
+    height: 25rem;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#FAQ .faq-box {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 2rem;
+}
+
+#FAQ .faq-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#FAQ .faq-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 24px;
+   
+}
+
+#FAQ .faq-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+   
+}
+
+#FAQ .faq-column .column {
+    padding: 0 10px;
+}
+
+#FAQ .faq-column .column h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#FAQ .faq-column .column p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+   
+}
+
+/********************* Download **************************/
+
+#download {
+    position: relative;
+    background: url('/img/snowboard-background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+
+}
+
+#download .overlay-download {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000094;
+    opacity: 0.8;
+}
+
+#download .download-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+#download .download-box .colum-1 {
+    padding-top: 18%;
+    z-index: 5;
+    padding-left: 5%;
+}
+
+#download .download-box .colum-1 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 24px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+#download .download-box .colum-1 span {
+    color: #f9c80e;  
+}
+
+#download .download-box .colum-1 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffff;
+    
+}
+
+#download .download-box .colum-1 .img-box {
+    display: inline-block;
+
+}
+
+#download .download-box .colum-1 .img-box img {
+    width: 200px;
+    
+}
+
+#download .download-box .colum-2 {
+    z-index: 5;
+}
+
+
+#download .download-box .colum-2 .img-box {
+    position: relative;
+    top: 18%;
+    left: 25%;
+
+}
+
+#download .download-box .colum-2 .img-box img {
+    width: 300px;
+    
 }
 
