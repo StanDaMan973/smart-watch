@@ -1111,7 +1111,7 @@ header img {
     top: 200px;
 }
 
-.video-loaded .play a{
+.video-loaded .play a {
     color: #43bccd;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -1153,21 +1153,21 @@ header img {
     width: 80%;
     margin: 0 auto;
     line-height: 24px;
-   
+
 }
 
 #FAQ .faq-column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
-   
+
 }
 
 #FAQ .faq-column .column {
     padding: 0 10px;
 }
 
-#FAQ .faq-column .column h4{
+#FAQ .faq-column .column h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1179,7 +1179,7 @@ header img {
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
-   
+
 }
 
 /********************* Download **************************/
@@ -1227,7 +1227,7 @@ header img {
 }
 
 #download .download-box .colum-1 span {
-    color: #f9c80e;  
+    color: #f9c80e;
 }
 
 #download .download-box .colum-1 p {
@@ -1236,7 +1236,7 @@ header img {
     font-size: 1rem;
     line-height: 24px;
     color: #ffffff;
-    
+
 }
 
 #download .download-box .colum-1 .img-box {
@@ -1246,7 +1246,7 @@ header img {
 
 #download .download-box .colum-1 .img-box img {
     width: 200px;
-    
+
 }
 
 #download .download-box .colum-2 {
@@ -1263,6 +1263,113 @@ header img {
 
 #download .download-box .colum-2 .img-box img {
     width: 300px;
+}
+
+/******************* team-box ********************/
+
+#team-members {
+    height: 600px;
+}
+
+
+
+#team-members .team-box {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#team-members .team-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+#team-members .team-box p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+
+}
+
+#team-members .team-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
     
 }
 
+
+#team-members .team-column .team-member {
+    position: relative;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    padding: 0 10px;
+    
+}
+
+ #team-members .team-column .team-member .team-block {
+    position: relative;
+    text-align: center;
+    background-color: #e9eced;
+    padding-bottom: 3rem;
+  
+
+ }
+
+ #team-members .team-column .team-member .team-block h3 {
+     font-size:1rem;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     color: #000000;
+     margin-bottom: 10px;
+
+ }
+
+ #team-members .team-column .team-member .team-block span {
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #000000;
+
+}
+
+ #team-members .team-column .team-member .team-block .team-img-block {
+     position: relative;
+     top: -2.5rem;
+     left: 0;
+     width: 100%;
+     height: 18rem;
+     background-color: #f9fcfd;
+     -webkit-transform: skewY(-7deg);
+     -moz-transform: skewY(-7deg);
+     -ms-transform: skewY(-7deg);
+     -o-transform: skewY(-7deg);
+     transform: skewY(-7deg);
+     overflow: hidden;
+     z-index: 0;
+ }
+
+ #team-members .team-column .team-member .team-block .team-img-block .team-img {
+    position: relative;
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+    transform: skewY(7deg);
+    top: 1.5rem;
+}
+
+
+#team-members .team-column .team-member .team-block .team-img-block .team-img img  {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
