@@ -39,12 +39,7 @@
 /*********** global variables **************/
 
 
-#cover {
-    height: 700px;
-    width: 100%;
-    background-color: #43bccd;
 
-}
 
 header {
     width: 100%;
@@ -58,7 +53,7 @@ header #navbar {
 header #navbar ul {
     display: flex;
     position: relative;
-    top: 40px;
+    top: 28px;
     justify-content: flex-end;
 
 }
@@ -76,6 +71,7 @@ header #navbar ul li a {
     color: #ffffff;
     font-weight: 300;
     transition: all .2s ease-in-out;
+    font-size: 0.8rem;
 }
 
 header #navbar ul li a:hover {
@@ -84,8 +80,32 @@ header #navbar ul li a:hover {
 }
 
 header img {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 60px;
+    z-index: 5;
+}
+
+#cover {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+    background-color: #43bccd;
+
+}
+
+#cover .container .trapeze-bg {
+    position: absolute;
+    top: 0px;
+    left: -17%;
+    width: 65%;
+    height: 100%;
+    background-color: #e9eced;
+    -webkit-transform: skewX(-7deg);
+    -moz-transform: skewX(-7deg);
+    -ms-transform: skewX(-7deg);
+    -o-transform: skewX(-7deg);
+    transform: skewX(-7deg)
 }
 
 .cover-column {
@@ -96,17 +116,19 @@ header img {
 .cover-box {
     position: relative;
     padding: 0 14% 0 0;
-    top: 120px;
+    top: 4.5rem;
 }
 
 .cover-box h2 {
-    color: #f2f2f2;
+    color: #222222;
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 700;
     padding-bottom: 20px;
     width: 80%;
     letter-spacing: 2px;
+    line-height: 60px;
+    text-transform: uppercase;
 
 }
 
@@ -120,36 +142,17 @@ header img {
 
 }
 
-.cover-box .blue-button {
-    background-color: #f2f2f2;
-    color: #000000;
-    display: inline-block;
-    border-radius: 25px;
-    position: relative;
-    height: 3rem;
-    padding: 0.50rem 2.5rem;
-    border: none;
-    font-size: 16px;
-    line-height: 1.5rem;
-    text-align: center;
-    font-weight: normal;
-    text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    vertical-align: middle;
-    outline: none;
-    cursor: pointer;
-}
+
 
 .cover-column .img-box {
-    margin-top: -80px;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 
 .cover-column .img-box img {
-    width: 600px;
+    width: 28rem;
 }
 
 /****************** about **********************/
@@ -172,14 +175,14 @@ header img {
 }
 
 #about .img-box img {
-    width: 400px;
-    margin-left: -60px;
-    margin-top: 65px;
+    width: 35rem;
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
 
 #about .about-box {
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
 #about .about-box h3 {
@@ -194,7 +197,7 @@ header img {
 #about .about-box p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 /****************** technologies  **********************/
@@ -279,7 +282,7 @@ header img {
 
 #quick .text-column .text-box {
     position: relative;
-    top: 140px;
+    top: 90px;
 }
 
 #quick .text-column .text-box h2 {
@@ -289,6 +292,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 50px;
 }
 
 #quick .text-column .text-box p {
@@ -325,7 +329,7 @@ header img {
 
 #instant .text-column .text-box {
     position: relative;
-    top: 140px;
+    top: 70px;
 }
 
 #instant .text-column .text-box h2 {
@@ -335,6 +339,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 50px;
 }
 
 #instant .text-column .text-box p {
@@ -346,12 +351,12 @@ header img {
 }
 
 #instant .img-column .img-box {
-    margin-top: 15%;
-    margin-left: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
 }
 
 #instant .img-column .img-box img {
-    width: 300px;
+    width: 330px;
 }
 
 
