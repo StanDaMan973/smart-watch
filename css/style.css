@@ -1,7 +1,10 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans&display=swap');
 
-
+html {
+  
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -135,7 +138,7 @@ header img {
 .cover-box p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    
     color: #000000;
     padding-bottom: 20px;
     line-height: 2rem;
@@ -145,14 +148,14 @@ header img {
 
 
 .cover-column .img-box {
-    margin-top: 2rem;
-    margin-left: auto;
+    margin-top: 3.2rem;
+    margin-left: 6rem;
     margin-right: auto;
 }
 
 
 .cover-column .img-box img {
-    width: 28rem;
+    width: 26rem;
 }
 
 /****************** about **********************/
@@ -175,9 +178,9 @@ header img {
 }
 
 #about .img-box img {
-    width: 35rem;
+    width: 33rem;
     margin-left: -100px;
-    margin-top: -100px;
+    margin-top: -75px;
 }
 
 
@@ -203,12 +206,13 @@ header img {
 /****************** technologies  **********************/
 
 #tech {
-    height: 550px;
     background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
         url('/img/smartwatch-bg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
 }
 
 
@@ -223,6 +227,7 @@ header img {
     color: #f2f2f2;
     font-weight: 700;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 #tech .tech-box p {
@@ -377,18 +382,19 @@ header img {
 
 
 #feature-1 .feature-1-box h2 {
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
 #feature-1 .feature-1-box p {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     line-height: 30px;
     font-weight: 400;
+    word-wrap: break-word
 }
 
 #feature-1 .feature-1-column {
@@ -400,12 +406,12 @@ header img {
 
 
 #feature-1 .feature-1-column .img-box {
-    margin-top: -2%;
+    margin-top: 0%;
     margin-left: 20%;
 }
 
 #feature-1 .feature-1-column .img-box img {
-    width: 300px;
+    width: 18rem;
 }
 
 #feature-1 .feature-1-column .box-column {
@@ -416,8 +422,8 @@ header img {
 }
 
 #feature-1 .feature-1-column .box-column .box {
-    width: 85%;
     margin-top: 20px;
+    padding: 0 10px;
 }
 
 
@@ -432,13 +438,15 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 #feature-1 .feature-1-column .box-column .box p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 26px;
+    word-wrap: break-word
 
 }
 
@@ -460,18 +468,19 @@ header img {
 
 
 #feature-2 .feature-2-box h2 {
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
 #feature-2 .feature-2-box p {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     line-height: 30px;
     font-weight: 400;
+    word-wrap: break-word
 }
 
 #feature-2 .feature-2-column {
@@ -534,6 +543,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 #feature-2 .feature-2-column .box-column-1 .box p {
@@ -541,6 +551,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 26px;
+    word-wrap: break-word
 }
 
 
@@ -556,6 +567,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 #feature-2 .feature-2-column .box-column-2 .box p {
