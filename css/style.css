@@ -1204,7 +1204,7 @@ header img {
 
 #download {
     position: relative;
-    background: url('/img/snowboard-background.jpeg');
+    background: url('/img/snowboard-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1259,11 +1259,14 @@ header img {
 
 #download .download-box .colum-1 .img-box {
     display: inline-block;
+    position: relative;
+    top: 20px;
+
 
 }
 
 #download .download-box .colum-1 .img-box img {
-    width: 200px;
+    width: 400px;
 
 }
 
@@ -1275,7 +1278,8 @@ header img {
 #download .download-box .colum-2 .img-box {
     position: relative;
     top: 18%;
-    left: -1%;
+    left: 25%;
+    width: 350px;
 
 }
 
