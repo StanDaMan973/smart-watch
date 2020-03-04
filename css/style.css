@@ -420,8 +420,9 @@ header img {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     width: 100%;
-
 }
+
+
 
 #feature-1 .feature-1-column .box-column .box {
     margin-top: 20px;
@@ -1845,13 +1846,97 @@ header img {
         padding-left: 2rem;
         padding-top: 1.2rem;
     }
-    
+
 }
 
 
 
 @media only screen and (max-width: 1023px) {
 
+    #cover {
+        height: 650px;
+    }
+
+   
+
+    .cover-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cover-column .img-box {
+        margin-top: 3rem;
+        margin-left: 15rem;
+        margin-right: auto;
+        z-index: 5;
+    }
+
+    .cover-column .img-box img {
+        width: 18rem;
+    }
+
+    .cover-box {
+        position: relative;
+        padding: 0px 5% 0 2%;
+        top: 4.5rem;
+        
+    }
+
+    .cover-box p {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    #about .about-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 500px;
+        
+    
+    }
+
+    #feature-1 .feature-1-column .box-column {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        width: 100%;
+    }
+
+    #gallery .gallery-img .flex-caption-box .flex-caption {
+        position: absolute;
+        left: 1rem;
+        top: 0.5rem;
+        color: #ffffff;
+        z-index: 100;
+        max-width: 500px
+    }
+
+    #gallery .gallery-img .flex-caption-box {
+        position: relative;
+        left: 10rem;
+        top: 4.5rem;
+        width: 100%;
+        float: left;
+        display: block;
+        z-index: 1;
+    }
+
+    #download .download-box .colum-2 .img-box {
+        position: relative;
+        top: 18%;
+        left: 0%;
+        width: 350px;
+    
+    }
+
+    
+
+    #footer .container .row .footer-contacts-column {
+        width: 45%;
+        float: left;
+        padding-left: 1.2rem;
+        padding-top: 1.2rem;
+    }
+    
 
 
 }
