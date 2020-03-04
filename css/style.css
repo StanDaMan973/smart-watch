@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans&display=swap');
 
 html {
-  
+
     scroll-behavior: smooth;
 }
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -127,8 +128,8 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 700;
-    padding-bottom: 20px;
-    width: 80%;
+    margin-bottom: 20px;
+    width: 100%;
     letter-spacing: 2px;
     line-height: 60px;
     text-transform: uppercase;
@@ -138,10 +139,9 @@ header img {
 .cover-box p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    
     color: #000000;
     padding-bottom: 20px;
-    line-height: 2rem;
+    line-height: 1.5rem;
 
 }
 
@@ -149,7 +149,7 @@ header img {
 
 .cover-column .img-box {
     margin-top: 3.2rem;
-    margin-left: 7rem;
+    margin-left: 3rem;
     margin-right: auto;
 }
 
@@ -169,7 +169,8 @@ header img {
 
 #about .about-column {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
 
 }
 
@@ -200,7 +201,7 @@ header img {
 #about .about-box p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5rem;
 }
 
 /****************** technologies  **********************/
@@ -208,17 +209,17 @@ header img {
 #tech {
     background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
         url('/img/smartwatch-bg.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }
 
 
 #tech .tech-box {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 #tech .tech-box h3 {
@@ -268,7 +269,8 @@ header img {
     font-family: 'Montserrat', sans-serif;
     color: #f2f2f2;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 22px;
+    font-size: 14px;
 
 }
 
@@ -349,15 +351,15 @@ header img {
 
 #instant .text-column .text-box p {
     font-family: 'Montserrat', sans-serif;
-    line-height: 30px;
+    line-height: 1.5rem;
     margin-bottom: 20px;
     font-size: 16px;
 
 }
 
 #instant .img-column .img-box {
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: 12%;
+    margin-left: 12%;
 }
 
 #instant .img-column .img-box img {
@@ -406,12 +408,12 @@ header img {
 
 
 #feature-1 .feature-1-column .img-box {
-    margin-top: 0%;
-    margin-left: 20%;
+    margin-top: -1%;
+    margin-left: 15%;
 }
 
 #feature-1 .feature-1-column .img-box img {
-    width: 18rem;
+    width: 20rem;
 }
 
 #feature-1 .feature-1-column .box-column {
@@ -447,7 +449,6 @@ header img {
     font-weight: 400;
     line-height: 26px;
     word-wrap: break-word
-
 }
 
 /* feature-2 */
@@ -835,7 +836,7 @@ header img {
 /************************ product 2 ********************************/
 
 #products-2 {
-    background-color: #e9eced;
+    background-color: #eeeeee;
     height: 700px;
 }
 
@@ -1039,7 +1040,7 @@ header img {
 }
 
 #sale .product .product-block .product-sale-img .product-sale-container img {
-    width: 250px;
+    width: 240px;
 }
 
 #sale .product .product-block .product-sale-content {
@@ -1116,7 +1117,7 @@ header img {
     justify-content: center;
     overflow: hidden;
     padding: 10px 0px;
-   
+
 }
 
 
@@ -1530,13 +1531,13 @@ header img {
 
 }
 
-/* #NewsBetter */
+/*********************** Newsletter **************************/
 
 #newsletter {
     background-color: #e9eced;
     max-width: 100%;
     padding-bottom: 20px;
- 
+
 
 }
 
@@ -1584,6 +1585,7 @@ header img {
     border-right: none !important;
     border-radius: 25px 0 0 25px;
     background-clip: padding-box;
+    outline: none;
 }
 
 #newsletter .email-box form button {
@@ -1600,8 +1602,8 @@ header img {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
-    
-    
+
+
 }
 
 #footer {
@@ -1706,7 +1708,7 @@ header img {
 
 #footer .container .row .footer-about-column ul li a {
     color: #ffffff;
-    
+
 }
 
 #footer .container .row .footer-contacts-column {
@@ -1716,7 +1718,7 @@ header img {
     padding-top: 1.2rem;
 }
 
-#footer .container .row .footer-contacts-column  h2 {
+#footer .container .row .footer-contacts-column h2 {
     color: #f9c80e;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -1732,7 +1734,7 @@ header img {
     margin-bottom: 1rem;
     line-height: 26px;
     font-weight: 300;
-    
+
 }
 
 #footer .container .row .footer-contacts-column ul li {
@@ -1747,7 +1749,109 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
-   
+
+}
+
+/*********************** Newsletter **************************/
+
+
+@media only screen and (max-width: 1200px) {
+
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    #quick .img-column .img-box {
+        margin-left: 10%;
+        margin-top: 23%;
+    }
+
+    #quick .img-column .img-box img {
+        width: 28rem;
+    }
+
+
+    #feature-1 .feature-1-column .img-box {
+        margin-top: -2%;
+        margin-left: 5%;
+    }
+
+
+    #products-2 .product {
+        display: inline-block;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 1.5rem;
+        width: 30%;
+        padding: 0 15px;
+    }
+
+    #products .product {
+        display: inline-block;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 1.5rem;
+        width: 30%;
+        padding: 0 15px;
+    }
+
+    #sale .product .product-block .product-bg .bg-img {
+        left: -15%;
+    }
+
+    #sale .product .product-block .product-sale-content {
+        position: relative;
+        width: 60%;
+        padding: 0 0 0 48%;
+    }
+
+    #download .download-box .colum-1 h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 24px;
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+
+    #team-members .team-column .team-member .team-block .team-img-block .team-img {
+        position: relative;
+        -webkit-transform: skewY(7deg);
+        -moz-transform: skewY(7deg);
+        -ms-transform: skewY(7deg);
+        -o-transform: skewY(7deg);
+        transform: skewY(7deg);
+        top: 2.5rem;
+    }
+
+    #newsletter .email-box form {
+        padding-left: 10px;
+    }
+
+    #footer .container.footer-first-line {
+        position: relative;
+        padding: 4.5rem 20px;
+        z-index: 5;
+    }
+
+
+    #footer .container .row .footer-contacts-column {
+        width: 45%;
+        float: left;
+        padding-left: 2rem;
+        padding-top: 1.2rem;
+    }
+    
 }
 
 
+
+@media only screen and (max-width: 1023px) {
+
+
+
+}
