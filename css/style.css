@@ -1866,7 +1866,7 @@ header img {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    
+
 
 
     .cover-box {
@@ -2030,8 +2030,6 @@ header img {
         line-height: 30px;
     }
 
-    
-
     #instant .img-column .img-box {
         text-align: center;
         margin-top: 0%;
@@ -2050,18 +2048,156 @@ header img {
         grid-row: 2
     }
 
-    
+    #feature-1 {
+        background: #f2f2f2;
+        height: 100%;
+        padding-bottom: 30px;
+    }
 
+    #feature-1 .feature-1-box {
+        color: #222222;
+        padding-top: 40px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #feature-1 .feature-1-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-top: 30px;
+    }
 
     #feature-1 .feature-1-column .box-column {
         display: grid;
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
 
+    #feature-1 .feature-1-column .img-box {
+        text-align: center;
+        margin-top: -5%;
+        margin-left: 0%;
+    }
+
+
+
+    #feature-1 .feature-1-column .box-column .box {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+
+    #feature-1 .feature-1-column .box-column .box i {
+        color: #43bccd;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #feature-2 {
+        background: #e9eced;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+
+    #feature-2 .feature-2-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #feature-2 .feature-2-column .box-column-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    #feature-2 .feature-2-column .box-column-1 .box {
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        
+    }
+
+    #feature-2 .feature-2-column .box-column-1 .box i {
+        color: #43bccd;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #feature-2 .feature-2-column .img-box {
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0;
+    }
+
+    #feature-2 .feature-2-column .box-column-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    #gallery {
+        position: relative;
+        background-color: #e9eced;
+        height: 100%;
+        overflow: hidden;
+    }
+
+ 
+
+    #gallery .gallery-content {
+        position: relative;
+        float: left;
+        width: 80%;
+        height: 18rem;
+        padding: 0;
+        text-align: left;
+        z-index: 5;
+        margin: 35px 45px;
+    }
+
+    #gallery .gallery-content .gallery-list li {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+
+    #gallery .trapeze-gallery-bg {
+        position: relative;
+        top: -5px;
+        left: -17%;
+        width: 70%;
+        height: 100%;
+        background-color: #e9eced;
+        transform: skewX(-7deg);
+        z-index: 5;
+    }
+
+    #gallery .gallery-img {
+        background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%), url(/img/smartwatch-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        float: right;
+        width: 100%;
+        right: 0;
+        height: 544px;
+        padding: 0;
+    }
+    
+
     #gallery .gallery-img .flex-caption-box .flex-caption {
         position: absolute;
-        left: 1rem;
+        left: -2rem;
         top: 0.5rem;
         color: #ffffff;
         z-index: 100;
