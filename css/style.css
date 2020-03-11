@@ -2550,7 +2550,7 @@ header img {
         width: 100%;
         text-align: center;
         padding: 0;
-        z-index: 5; 
+        z-index: 5;
         float: none;
         margin-bottom: 4rem;
     }
@@ -2571,7 +2571,7 @@ header img {
         max-height: 14.25rem;
         width: 200px;
         height: auto;
-    
+
     }
 
     #sale .product .product-block .product-sale-content {
@@ -2618,6 +2618,8 @@ header img {
         line-height: 26px;
     }
 
+
+
     #download {
         height: 36rem;
     }
@@ -2632,7 +2634,7 @@ header img {
 
     #download .download-box .colum-2 .img-box {
         position: relative;
-        top: 16%;
+        top: 20%;
         left: 24%;
         width: 250px;
     }
@@ -2644,4 +2646,249 @@ header img {
         padding-left: 0%;
     }
 
+    #team-members .team-column .team-member .team-block .team-img-block {
+        height: 30rem;
+    }
+
+    #reviews .review-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    #reviews .customers-box .customer-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        padding-top: 30px;
+        width: 80%;
+    }
+
+    #buy-now .buy-box {
+        padding-top: 4rem;
+    }
+
+    #buy-now .buy-box {
+        padding-top: 3.5rem;
+    }
+
+    #buy-now .buy-box h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+    }
+
+
+    #newsletter .email-box form input {
+        width: 50%;
+    }
+
+    #newsletter .email-box form {
+        padding-left: 30px;
+    }
+
+    #footer {
+        background-color: #e9eced;
+        color: #ffffff;
+        height: 100%;
+    }
+
+    #footer .container.footer-first-line {
+        padding: 1.5rem 20px;
+    }
+
+    #footer .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #footer .footer-bg .footer-bg-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: none;
+    }
+
+
+
+    #footer .footer-bg .footer-bg-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        opacity: 0.8;
+    }
+
+    #footer .container .row .footer-about-column {
+        width: 100%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+    }
+
+    #footer .container .row .footer-contacts-column {
+        width: 100%;
+        float: left;
+        padding-left: 0.2rem;
+        padding-top: 1.2rem;
+    }
+
 }
+
+
+@media only screen and (max-width: 499px) {
+
+    .cover-column .img-box {
+        margin-left: -1%;
+    }
+
+    .cover-column .img-box img {
+        width: 14rem;
+    }
+
+    #about .img-column .img-box img {
+        width: 22rem;
+    }
+
+    #about .img-column .img-box img {
+        margin-top: -40px;
+    }
+
+
+    #quick .row {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+
+    }
+
+    #quick .img-column .img-box img {
+        width: 24rem;
+    }
+
+    #quick .text-column .text-box h2 {
+        font-size: 32px;
+    }
+
+    #instant .text-column .text-box h2 {
+        font-size: 32px;
+    }
+
+    #instant .img-column .img-box img {
+        width: 15rem;
+    }
+
+    #gallery .gallery-img .flex-caption-box {
+        top: 2.5rem;
+    }
+
+    #gallery .gallery-img {
+        height: 400px;
+    }
+
+    #gallery .gallery-img .flex-caption-box .flex-caption {
+        max-width: 380px;
+    }
+
+    #gallery .gallery-content {
+        margin: 35px 38px;
+    }
+
+    #products .product {
+        margin-left: 28px;
+    }
+
+    #products-2 .product {
+        margin-left: 28px;
+    }
+
+    #sale .product {
+        margin-left: 28px;
+    }
+
+    #team-members .team-column .team-member .team-block .team-img-block {
+        height: 25rem;
+    }
+
+
+    #download .download-box .colum-2 .img-box {
+        position: relative;
+        top: 20%;
+        left: 0%;
+        width: 100%;
+    }
+
+    #newsletter .email-box form {
+        padding-left: 2px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #feature-1 .feature-1-column .img-box {
+        text-align: center;
+        margin-top: -5%;
+        margin-left: 2%;
+    }
+
+    #products .product {
+        margin-left: 23px;
+    }
+
+    #products-2 .product {
+        margin-left: 23px;
+    }
+
+    #sale {
+        padding-bottom: 20px;
+    }
+
+    #sale .product {
+        margin-left: 23px;
+    }
+
+    #team-members .team-column .team-member .team-block .team-img-block {
+        height: 22rem;
+    }
+
+    #instant .img-column .img-box img {
+        width: 12rem;
+    }
+
+    #quick .img-column .img-box img {
+        width: 20rem;
+    }
+
+    #gallery .gallery-img .flex-caption-box .flex-caption {
+        max-width: 330px;
+        left: -7.4rem;
+    }
+
+    #download .download-box .colum-1 .img-box img {
+        width: 300px;
+    }
+
+    #buy-now .buy-box h2 {
+        font-size: 2rem;
+    }
+
+    #newsletter .email-box form input {
+        width: 42%;
+    }
+
+    #newsletter .email-box form {
+        padding-left: 4px;
+    }
+}
+
+@media only screen and (max-width: 370px) {}
