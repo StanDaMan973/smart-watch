@@ -10,7 +10,6 @@ html {
     max-width: 1170px;
     margin: 0 auto;
     height: 100%;
-
 }
 
 .row {
@@ -39,7 +38,6 @@ html {
 
 }
 
-
 /*********** global variables **************/
 
 
@@ -48,6 +46,19 @@ html {
 header {
     width: 100%;
     display: flex;
+    --text: #f4f4f4;
+    --text-inverse: #333;
+    --background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 250ms ease-in;
+    background: var(--background);
+    color: var(--text);
 }
 
 header #navbar {
@@ -57,9 +68,8 @@ header #navbar {
 header #navbar ul {
     display: flex;
     position: relative;
-    top: 30px;
+    top: 6px;
     justify-content: flex-end;
-
 }
 
 header #navbar ul li #home {
@@ -88,6 +98,18 @@ header img {
     width: 60px;
     z-index: 5;
 }
+
+.nav-scrolled {
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+/***************** header *******************/
+
+
 
 #cover {
     position: relative;
@@ -120,7 +142,7 @@ header img {
 .cover-box {
     position: relative;
     padding: 0 14% 0 0;
-    top: 4.5rem;
+    top: 8.5rem;
 }
 
 .cover-box h2 {
@@ -148,14 +170,16 @@ header img {
 
 
 .cover-column .img-box {
-    margin-top: 3.2rem;
-    margin-left: 5rem;
+    margin-top: 4.2rem;
+    margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 2rem;
 }
 
 
 .cover-column .img-box img {
-    width: 26rem;
+    width: 24rem;
 }
 
 /****************** about **********************/
@@ -318,7 +342,8 @@ header img {
 
 
 
-/* instant */
+/***************** instant *******************/
+
 
 #instant {
     background: #e9eced;
@@ -364,7 +389,8 @@ header img {
 }
 
 
-/* feature-1 */
+/***************** feature-1 *******************/
+
 
 #feature-1 {
     background: #f2f2f2;
@@ -449,7 +475,8 @@ header img {
     word-wrap: break-word
 }
 
-/* feature-2 */
+
+/***************** feature-2 *******************/
 
 
 #feature-2 {
@@ -577,7 +604,8 @@ header img {
 }
 
 
-/* gallery */
+
+/***************** gallery *******************/
 
 #gallery {
     position: relative;
@@ -2889,6 +2917,85 @@ header img {
     #newsletter .email-box form {
         padding-left: 4px;
     }
+
+    #quick .text-column .text-box h2 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    #download .download-box .colum-1 h2 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+
+    #tech .tech-box p {
+        font-size: 14px;
+    }
+
+    #instant .text-column .text-box h2 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    #instant .text-column .text-box p {
+        font-size: 14px;
+    }
 }
 
-@media only screen and (max-width: 370px) {}
+@media only screen and (max-width: 370px) {
+
+    #about .img-column .img-box img {
+        width: 18rem;
+    }
+
+    #feature-1 .feature-1-column .img-box img {
+        width: 16rem;
+    }
+
+    #instant .img-column .img-box img {
+        width: 10rem;
+    }
+
+    #quick .img-column .img-box img {
+        width: 18rem;
+    }
+    
+    #quick .text-column .text-box h2 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    #tech .tech-box {
+        text-align: center;
+        padding: 40px 10px 0 10px;
+    }
+    #tech .tech-box h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    #tech .tech-box p {
+        font-size: 14px;
+    }
+
+    #instant .text-column .text-box p {
+        font-size: 14px;
+    }
+
+    #feature-1 .feature-1-box h2 {
+        font-size: 28px;
+       
+    }
+
+    #feature-1 .feature-1-box p {
+        font-size: 14px;
+    }
+
+    #gallery .gallery-content h2 {
+        font-size: 32px;
+    }
+
+    #gallery .gallery-content p {
+        font-size: 14px;
+    }
+}
