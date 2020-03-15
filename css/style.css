@@ -59,6 +59,7 @@ header {
     transition: background 250ms ease-in;
     background: var(--background);
     color: var(--text);
+    padding-top: 2px;
 }
 
 header #navbar {
@@ -68,13 +69,10 @@ header #navbar {
 header #navbar ul {
     display: flex;
     position: relative;
-    top: 6px;
+    top: 2px;
+    left: -4px;
     justify-content: flex-end;
-}
-
-header #navbar ul li #home {
-    color: #000000;
-    border-bottom: 1px solid #f9ca24;
+    
 }
 
 header #navbar ul li a {
@@ -86,6 +84,7 @@ header #navbar ul li a {
     font-weight: 300;
     transition: all .2s ease-in-out;
     font-size: 0.8rem;
+    
 }
 
 header #navbar ul li a:hover {
@@ -94,7 +93,7 @@ header #navbar ul li a:hover {
 }
 
 header img {
-    margin-top: 5px;
+    margin-top: -3px;
     width: 60px;
     z-index: 5;
 }
@@ -102,10 +101,14 @@ header img {
 .nav-scrolled {
     --text: #333;
     --text-inverse: #f4f4f4;
-    --background: #f4f4f4;
+    --background: #43bccd;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   }
   
+  .link-color {
+    color: #000000 !important;
+    border-bottom: 1px solid #f9ca24;
+  }
 
 /***************** header *******************/
 
@@ -1711,6 +1714,7 @@ header img {
     font-weight: 700;
     color: #ffffff;
 }
+
 
 #footer .container .row .footer-about-column p {
     font-family: 'Montserrat', sans-serif;
