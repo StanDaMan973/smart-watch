@@ -72,7 +72,7 @@ header #navbar ul {
     top: 2px;
     left: -4px;
     justify-content: flex-end;
-    
+
 }
 
 header #navbar ul li a {
@@ -84,7 +84,7 @@ header #navbar ul li a {
     font-weight: 300;
     transition: all .2s ease-in-out;
     font-size: 0.8rem;
-    
+
 }
 
 header #navbar ul li a:hover {
@@ -103,12 +103,16 @@ header img {
     --text-inverse: #f4f4f4;
     --background: #43bccd;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .link-color {
+}
+
+.link-color {
     color: #000000 !important;
     border-bottom: 1px solid #f9ca24;
-  }
+}
+
+#navbar .navbar-toggler {
+    display: none;
+}
 
 /***************** header *******************/
 
@@ -145,7 +149,7 @@ header img {
 .cover-box {
     position: relative;
     padding: 0 14% 0 0;
-    top: 8.5rem;
+    top: 9rem;
 }
 
 .cover-box h2 {
@@ -173,16 +177,17 @@ header img {
 
 
 .cover-column .img-box {
-    margin-top: 4.2rem;
+    margin-top: 2.2rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 2rem;
+    top: 4rem;
+    left: 2rem;
 }
 
 
 .cover-column .img-box img {
-    width: 24rem;
+    width: 28rem;
 }
 
 /****************** about **********************/
@@ -1889,6 +1894,101 @@ header img {
         padding: 0;
     }
 
+
+    header #navbar {
+        padding: 0px;
+    }
+
+    header #navbar ul {
+        display: inline-block;
+        width: 84%;
+        padding: 0;
+        height: 400px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        position: absolute;
+        top: 50px;
+        left: 56px;
+        z-index: 10;
+        margin: 0;
+        background: #43bccd;
+    }
+
+    header #navbar ul.open {
+        margin-top: 10px;
+        max-height: 110vh;
+    }
+
+    header #navbar ul li {
+        width: 100%;
+        transition: all .2s ease-in-out;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    header #navbar ul li:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    header #navbar ul li a {
+        position: relative;
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all .2s ease-in-out;
+        margin: 0 10px;
+        font-weight: 300;
+    }
+
+
+    header #navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 12px;
+        right: 30px;
+        background-color: transparent;
+        color: #fff;
+        /* border: 3px solid #fff; */
+        border: none;
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+
+
+    #navbar .navbar-toggler span,
+    #navbar .navbar-toggler span::before,
+    #navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    #navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+    }
+
+    #navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+    }
+
+    #navbar .navbar-toggler.open-navbar-toggler span {
+        transform: rotate(90deg);
+    }
+
+
+
+
     #cover {
         height: 660px;
     }
@@ -1898,14 +1998,11 @@ header img {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
-
-
     .cover-box {
         position: relative;
         padding-left: 20px;
         padding-right: 20px;
-        top: 1.5rem;
+        top: 6rem;
     }
 
     .cover-box h2 {
@@ -2423,12 +2520,27 @@ header img {
         padding-left: 1.2rem;
         padding-top: 1.2rem;
     }
-
-
-
 }
 
+
+
 @media only screen and (max-width: 767px) {
+
+    header #navbar ul {
+        display: inline-block;
+        width: 84%;
+        padding: 0;
+        height: 400px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        position: absolute;
+        top: 50px;
+        left: 38px;
+        z-index: 10;
+        margin: 0;
+        background: #43bccd;
+    }
 
     #cover {
         height: 100%;
@@ -2779,6 +2891,22 @@ header img {
 
 @media only screen and (max-width: 499px) {
 
+    header #navbar ul {
+        display: inline-block;
+        width: 84%;
+        padding: 0;
+        height: 400px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        position: absolute;
+        top: 50px;
+        left: 32px;
+        z-index: 10;
+        margin: 0;
+        background: #43bccd;
+    }
+
     .cover-column .img-box {
         margin-left: -1%;
     }
@@ -2963,7 +3091,7 @@ header img {
     #quick .img-column .img-box img {
         width: 18rem;
     }
-    
+
     #quick .text-column .text-box h2 {
         font-size: 24px;
         line-height: 40px;
@@ -2973,6 +3101,7 @@ header img {
         text-align: center;
         padding: 40px 10px 0 10px;
     }
+
     #tech .tech-box h3 {
         font-size: 30px;
         margin-bottom: 15px;
@@ -2988,7 +3117,7 @@ header img {
 
     #feature-1 .feature-1-box h2 {
         font-size: 28px;
-       
+
     }
 
     #feature-1 .feature-1-box p {

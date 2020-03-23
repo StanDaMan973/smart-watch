@@ -28,20 +28,45 @@ coverSectionObserver.observe(sectionOne);
 function onScroll(event) {
     let navLinks = document.querySelectorAll('#navbar a');
     let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    
+
     for (let i = 0; i < navLinks.length; i++) {
         var currLink = navLinks[i];
         var val = currLink.getAttribute('href');
         var refElement = document.querySelector(val);
-        if(refElement.offsetTop <= scrollPos && (refElement.offsetTop + refElement.offsetHeight > scrollPos)) {
-           document.querySelector('#navbar ul li a').classList.remove('link-color');
-           currLink.classList.add('link-color');
+        if (refElement.offsetTop <= scrollPos && (refElement.offsetTop + refElement.offsetHeight > scrollPos)) {
+            document.querySelector('#navbar ul li a').classList.remove('link-color');
+            currLink.classList.add('link-color');
         } else {
             currLink.classList.remove('link-color');
-        }    
-    } 
+        }
+    }
 }
 
 
 window.document.addEventListener('scroll', onScroll);
 
+
+
+// Mobile Menu navigation 
+
+let navbarToggler = document.querySelector(".navbar-toggler");
+let navbarMenu = document.querySelector("#navbar ul");
+let navbarLinks = document.querySelectorAll("#navbar a");
+
+navbarToggler.addEventListener('click', navbarToggleClick);
+
+function navbarToggleClick() {
+    navbarToggler.classList.toggle('open-navbar-toggler');
+    navbarMenu.classList.toggle('open'); 
+
+}
+
+navbarLinks.forEach(elm => elm.addEventListener('click', navbarClick));  
+
+function navbarClick() {
+    if(navbarMenu.classList.contains('open')) {
+        navbarToggler.click(); 
+
+    }
+
+}
