@@ -49,19 +49,66 @@
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-          <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
-          </div>
-        </div>  
-      </div>
+            <div class="product-bg"></div>
+            <div class="modal-header">
+                <div class="img-box">
+                    <img src="/img/applewatch-black-left.png" alt="applewatch">
+                </div>
+                <div class="text-box">
+                    <h3>apple watch</h3>
+                    <h4>apple watch series 5</h4>
+                    <p class="price">$150</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consectetur.</p>
+                </div>
+            </div>
+            <div id= "form-box"  class="form-box">
+                <form id= "order-form"  class="order-form" action="#">
+                    <div class="order-header">
+                        <h3>Shiping Address</h3>
+                    </div>
+                    <div class="first-name">
+                        <input type="text" id="fname" name="firstname" placeholder="Firstname">
+                    </div>
+                    <div class="last-name">
+                        <input type="text" id="lname" name="lastname" placeholder="Lastname">
+                    </div>
+                    <div class="email">
+                        <input type="email" id="email" name="email" placeholder="Email">                    
+                    </div>
+                    <div class="address">
+                        <input type="text" id="address" name="address" placeholder="Address">                    
+                    </div>
+                    <div class="city">
+                        <input type="text" id="city" name="city" placeholder="city">                    
+                    </div>
+                    <div class="state">
+                        <input type="text" id="state" name="state" placeholder="state">                    
+                    </div>
+                    <div class="zip-code">
+                        <input type="text" id="zip-code" name="zip-code" placeholder="zip-code">                    
+                    </div>
+                    <div class="phone-number">
+                        <input type="text" id="phone-number" name="phone-number" placeholder="phone-number">                    
+                    </div>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                          <option value="0">Choose Country:</option>
+                          <option value="1">United States</option>
+                          <option value="2">United Kingdom</option>
+                          <option value="3">Mexico</option>
+                          <option value="4">Canada</option>
+                          <option value="5">France</option>
+                          <option value="6">Dominican Republic</option>
+                        </select>
+                      </div>
+                      <div class="btn-box">
+                        <a href="#products" class="blue-button">Buy Now</a>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <section id="about" class="section">
         <div class="container">
@@ -550,7 +597,9 @@
     </section>
 
     <section id="video" class="video-loaded">
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/-gXPwYpPeXo?rel=0&amp;autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/-gXPwYpPeXo?rel=0&amp;autoplay=1&mute=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </section>
 
     <section id="FAQ">
