@@ -5,7 +5,7 @@ const sectionOne = document.querySelector('#cover');
 
 
 var sectionOneOptions = {
-    rootMargin: "-200px 0px 0px 0px"
+    rootMargin: "-500px 0px 0px 0px"
 };
 
 const coverSectionObserver = new IntersectionObserver(function (entries, coverSectionObserver) {
@@ -70,3 +70,30 @@ function navbarClick() {
     }
 
 }
+
+
+// Modal 
+
+// Get the modal
+
+let modal = document.getElementById('myModal'); 
+
+
+// Get the button that opens the modal
+let openButton = document.getElementById('modal-button'); 
+
+// Get the <span> element that closes the modal
+let closeButton = document.querySelector(".close"); 
+
+
+// When the user clicks on the button, open the modal
+openButton.addEventListener('click', function() {
+    modal.style.display = "block"
+});
+
+// When the user clicks on <span> (x), close the modal
+closeButton.addEventListener('click', function() {
+    modal.style.display = "none"
+});
+
+// When the user clicks anywhere outside of the modal, close it
