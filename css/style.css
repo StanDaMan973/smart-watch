@@ -105,7 +105,7 @@ html {
     margin: 0 auto;
     color: #ffffff;
     width: 45%;
-    height: 100%;
+    height: 900px;
     padding: 0 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
@@ -184,8 +184,87 @@ html {
 
 .modal-content .form-box {
     position: relative;
-    top: 80px;
+    top: 120px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
+
+
+.modal-content .form-box h3 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.modal-content .form-box .order-form .input-box {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.modal-content .form-box .order-form .input-box input {
+   padding: 0.4rem;
+   border-radius: 5px;
+   border: 2px solid #43bccd;
+   background-color: #f9fcfd;
+   height: 2rem;
+   font-size: 1rem;
+   text-transform: capitalize;
+}
+
+.modal-content .form-box .order-form #first-name {
+    padding-right: 10px;
+}
+
+
+.modal-content .form-box .order-form .input-box #fname {
+    width: 220px;
+   
+}
+
+.modal-content .form-box .order-form .input-box #lname {
+    width: 215px;
+}
+
+
+.modal-content .form-box .order-form .input-box #email {
+    width: 466px;
+}
+
+.modal-content .form-box .order-form .input-box #address {
+    width: 466px;
+}
+
+.modal-content .form-box .order-form .input-box #city {
+    width: 466px;
+}
+
+
+.modal-content .form-box .order-form  #custom-select {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    padding: 0.75rem;
+    margin: 1.5rem 0 0 0;
+    background-color: #f9fcfd;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+
 
 
 
