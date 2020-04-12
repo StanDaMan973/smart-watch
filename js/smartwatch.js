@@ -80,16 +80,22 @@ let modal = document.getElementById('myModal');
 
 
 // Get the button that opens the modal
-let openButton = document.getElementById('modal-button'); 
+let openButton = document.querySelectorAll('.bnt-block .blue-button'); 
 
 // Get the <span> element that closes the modal
 let closeButton = document.querySelector(".close"); 
 
 
-// When the user clicks on the button, open the modal
-openButton.addEventListener('click', function() {
+// When the user clicks on any product button, open the modal
+
+for (let i = 0; i < openButton.length; i++) {
+    const button = openButton[i];
+    button.addEventListener('click', function() {
     modal.style.display = "block"
 });
+    
+}
+
 
 // When the user clicks on <span> (x), close the modal
 closeButton.addEventListener('click', function() {
@@ -97,3 +103,10 @@ closeButton.addEventListener('click', function() {
 });
 
 // When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+

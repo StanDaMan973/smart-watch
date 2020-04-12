@@ -105,7 +105,7 @@ html {
     margin: 0 auto;
     color: #ffffff;
     width: 45%;
-    height: 900px;
+    height: 950px;
     padding: 0 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
@@ -204,7 +204,7 @@ html {
 
 .modal-content .form-box .order-form .input-box {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .modal-content .form-box .order-form .input-box input {
@@ -213,9 +213,15 @@ html {
    border: 2px solid #43bccd;
    background-color: #f9fcfd;
    height: 2rem;
-   font-size: 1rem;
+   font-size: 1.2rem;
    text-transform: capitalize;
 }
+
+
+.modal-content .form-box .order-form #custom-select {
+   padding-right: 10px;
+ }
+
 
 .modal-content .form-box .order-form #first-name {
     padding-right: 10px;
@@ -244,13 +250,38 @@ html {
     width: 466px;
 }
 
+.modal-content .form-box .order-form .input-box #state {
+    width: 250px;
+    
+}
 
-.modal-content .form-box .order-form  #custom-select {
+.modal-content .form-box .order-form .input-box #zip-code {
+    width: 205px;
+    padding-right: 10px;
+    
+}
+
+.modal-content .form-box .order-form .input-box #phone-number{
+    width: 235px;
+    
+    
+}
+
+.modal-content .form-box .order-form .btn-box {
+    margin-top: 20px;
+    
+    
+}
+
+
+
+
+.modal-content .form-box .order-form  #custom-select select {
     position: relative;
-    width: 100%;
+    width: 200px;
     height: 3rem;
     padding: 0.75rem;
-    margin: 1.5rem 0 0 0;
+    border: 2px solid #43bccd;
     background-color: #f9fcfd;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -261,6 +292,7 @@ html {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+
 }
 
 
