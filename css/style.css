@@ -19,8 +19,10 @@ html {
 
 
 .blue-button {
+    /* background-color: #34b1c3;
+    background-image: #34b1c3; */
     background-color: #f9c80e;
-    background-image: #f9c80e;
+    background-image:#f9c80e;
     background-image: -webkit-linear-gradient(30deg, #43bccd 50%, transparent 50%);
     background-image: linear-gradient(30deg, #43bccd 50%, transparent 50%);
     background-size: 500px;
@@ -46,18 +48,28 @@ html {
     outline: none;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .blue-button:hover {
     background-position: -400%;
     transition: background 1s ease-in-out;
-    color: #000000;
+    color: #222222;
+    
 }
 
 
 .modal-button {
-    background-color: #43bccd;
+    background-color: #f9c80e;
+    background-image: #f9c80e;
+    background-image: -webkit-linear-gradient(30deg, #43bccd 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #43bccd 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 1s ease-in-out;
+    transition: all .2s ease-in-out;
     color: #f2f2f2;
     display: inline-block;
     border-radius: 25px;
@@ -76,7 +88,16 @@ html {
     outline: none;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
+
+.modal-button:hover {
+    background-position: -400%;
+    transition: background 1s ease-in-out;
+    color: #000000;
 }
 
 /*********** global variables **************/
@@ -325,18 +346,36 @@ html {
 }
 
 /* The Close Button */
-.close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+#close-button {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    transition: all .2s ease-in-out;
 }
 
 .close:hover,
 .close:focus {
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
+    color: #ffffff;
+    background: #000000;
 }
 
 
@@ -386,6 +425,12 @@ header #navbar ul li a {
     font-weight: 300;
     transition: all .2s ease-in-out;
     font-size: 0.8rem;
+
+}
+
+header #navbar ul li a:hover {
+    color: #000000 ;
+    border-bottom: 1px solid #f9ca24;
 
 }
 

@@ -81,6 +81,8 @@ let modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
 let openButton = document.querySelectorAll('.bnt-block .blue-button'); 
+let saleButton = document.querySelectorAll('.modal-button'); 
+
 
 // Get the <span> element that closes the modal
 let closeButton = document.querySelector(".close"); 
@@ -91,6 +93,14 @@ let closeButton = document.querySelector(".close");
 for (let i = 0; i < openButton.length; i++) {
     const button = openButton[i];
     button.addEventListener('click', function() {
+    modal.style.display = "block"
+});
+    
+}
+
+for (let i = 0; i < saleButton.length; i++) {
+    const btn = saleButton[i];
+    btn.addEventListener('click', function() {
     modal.style.display = "block"
 });
     
@@ -110,3 +120,16 @@ window.onclick = function(event) {
     }
   }
 
+// carousel 
+
+// track the current index 
+let currentSlide = 0; 
+
+// get all the images 
+// get the left arrow 
+// get the right arrow 
+// set the current image when you reset the carousel
+// create the left function to slide left 
+// create the right function to slide right 
+// create the function to click the left arrow
+// create the function to click the right arrow
