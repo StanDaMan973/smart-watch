@@ -1,3 +1,34 @@
+
+
+//loader 
+
+var loader;
+
+function loadNow(opacity) {
+    if(opacity <= 0) {
+        displayContent();
+
+    } else {
+        loader.style.opacity = opacity;
+
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05)
+        }, 50)
+
+    }
+}
+
+function displayContent() {
+	loader.style.display = 'none'; 
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+	loader = document.querySelector('.loader'); 
+	loadNow(2);
+}); 
+
+
+
 // intersection Observer
 
 const header = document.querySelector('header');
@@ -90,21 +121,25 @@ let closeButton = document.querySelector(".close");
 
 // When the user clicks on any product button, open the modal
 
-for (let i = 0; i < openButton.length; i++) {
-    const button = openButton[i];
+function openModal(saleBtn, productBtn) {
+
+for (let i = 0; i < productBtn.length; i++) {
+    const button = productBtn[i];
     button.addEventListener('click', function() {
     modal.style.display = "block"
 });
-    
 }
 
-for (let i = 0; i < saleButton.length; i++) {
-    const btn = saleButton[i];
+for (let i = 0; i < saleBtn.length; i++) {
+    const btn = saleBtn[i];
     btn.addEventListener('click', function() {
     modal.style.display = "block"
 });
-    
 }
+
+}
+
+openModal(openButton, saleButton);
 
 
 // When the user clicks on <span> (x), close the modal
