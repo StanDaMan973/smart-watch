@@ -155,6 +155,8 @@ window.onclick = function(event) {
     }
   }
 
+  
+
 // carousel 
 
 // track the current index 
