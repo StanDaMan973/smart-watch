@@ -108,18 +108,9 @@ function navbarClick() {
 // Get the modal
 
 let modal = document.getElementById('myModal'); 
-
-
-// Get the button that opens the modal
 let openButton = document.querySelectorAll('.bnt-block .blue-button'); 
 let saleButton = document.querySelectorAll('.modal-button'); 
-
-
-// Get the <span> element that closes the modal
 let closeButton = document.querySelector(".close"); 
-
-
-// When the user clicks on any product button, open the modal
 
 function openModal(saleBtn, productBtn) {
 
@@ -136,18 +127,14 @@ for (let i = 0; i < saleBtn.length; i++) {
     modal.style.display = "block"
 });
 }
-
 }
 
 openModal(openButton, saleButton);
 
 
-// When the user clicks on <span> (x), close the modal
 closeButton.addEventListener('click', function() {
     modal.style.display = "none"
 });
-
-// When the user clicks anywhere outside of the modal, close it
 
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -155,18 +142,63 @@ window.onclick = function(event) {
     }
   }
 
-  
+// Carousel 
 
-// carousel 
 
-// track the current index 
+let sliderImages = document.querySelectorAll('.slide');
+let leftArrow = document.querySelector('.button-prev'); 
+let rightArrow = document.querySelector('.button-next'); 
 let currentSlide = 0; 
 
-// get all the images 
-// get the left arrow 
-// get the right arrow 
-// set the current image when you reset the carousel
-// create the left function to slide left 
-// create the right function to slide right 
-// create the function to click the left arrow
-// create the function to click the right arrow
+
+function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none"; 
+    }
+}
+
+function startSlide() {
+    reset(); 
+    sliderImages[0].style.display = "block"
+    sliderImages[0].style.opacity = 1;
+    
+}
+
+
+
+function slideLeft() {
+    reset();
+    sliderImages[currentSlide - 1].style.display = "block";
+    sliderImages[currentSlide - 1].style.opacity = "1";  
+    currentSlide--;
+   
+}
+
+function slideRight() {
+    reset();
+    sliderImages[currentSlide + 1].style.display = "block";
+    sliderImages[currentSlide + 1].style.opacity = "1";  
+    currentSlide++;
+    
+    
+}
+
+
+leftArrow.addEventListener('click', function() {
+    if (currentSlide === 0) {
+        currentSlide = sliderImages.length; 
+    }
+
+    slideLeft(); 
+}); 
+  
+
+rightArrow.addEventListener('click', function() {
+    if (currentSlide === sliderImages.length - 1) {
+        currentSlide = - 1;     
+    }
+
+    slideRight(); 
+}); 
+
+startSlide();

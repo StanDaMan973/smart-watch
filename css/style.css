@@ -1096,7 +1096,7 @@ header img {
     float: left;
     margin-right: -100px;
     position: relative;
-    opacity: 1;
+    opacity: 0;
     z-index: 1;
     transition: opacity 2s ease 0s;
     display: block;
@@ -1199,10 +1199,14 @@ header img {
     opacity: 1;
  }
 
+
  #gallery .gallery-img .slider-container .slider-button-container ul li a i { 
     font-size: 32px;
  }
 
+ .opacity {
+     opacity: 1;
+ }
 
 
 /************* products ********************/
