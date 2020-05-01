@@ -2349,7 +2349,7 @@ header img {
 
     header #navbar ul {
         display: inline-block;
-        width: 84%;
+        width: 100%;
         padding: 0;
         height: 400px;
         max-height: 0;
@@ -2357,7 +2357,7 @@ header img {
         transition: all ease-in-out 0.3s;
         position: absolute;
         top: 50px;
-        left: 56px;
+        left: 0px;
         z-index: 10;
         margin: 0;
         background: #43bccd;
@@ -2433,8 +2433,6 @@ header img {
     #navbar .navbar-toggler.open-navbar-toggler span {
         transform: rotate(90deg);
     }
-
-
 
 
     #cover {
@@ -2944,21 +2942,7 @@ header img {
 
 @media only screen and (max-width: 767px) {
 
-    header #navbar ul {
-        display: inline-block;
-        width: 84%;
-        padding: 0;
-        height: 400px;
-        max-height: 0;
-        overflow: hidden;
-        transition: all ease-in-out 0.3s;
-        position: absolute;
-        top: 50px;
-        left: 38px;
-        z-index: 10;
-        margin: 0;
-        background: #43bccd;
-    }
+   
 
     #cover {
         height: 100%;
