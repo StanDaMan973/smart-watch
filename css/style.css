@@ -40,7 +40,7 @@ button {
     height: 2rem;
     padding: 0.50rem 2.2rem;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2rem;
     text-align: center;
     font-weight: normal;
@@ -79,7 +79,7 @@ button {
     height: 3rem;
     padding: 0.50rem 2.2rem;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2rem;
     text-align: center;
     font-weight: normal;
@@ -129,7 +129,7 @@ button {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #e9eced;
+    background-color: #f5f5f7;
     padding: 2rem 0;
     overflow: hidden;
     text-align: center;
@@ -146,7 +146,7 @@ button {
 }
 
 .modal-content .product-bg {
-    background-color: #43bccd;
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: -3rem;
     left: 0px;
@@ -184,7 +184,7 @@ button {
 }
 
 .modal-content .modal-header .text-box h4 {
-    color: #a8e0e8;
+    color: #A3AAAE;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
@@ -241,7 +241,7 @@ button {
 .modal-content .form-box .order-form .input-box input {
     padding: 0.4rem;
     border-radius: 5px;
-    border: 2px solid #43bccd;
+    border: 2px solid #f9ca24;
     background-color: #f9fcfd;
     height: 2rem;
     font-size: 1.2rem;
@@ -312,7 +312,7 @@ button {
     width: 200px;
     height: 3rem;
     padding: 0.75rem;
-    border: 2px solid #43bccd;
+    border: 2px solid #f9ca24;
     background-color: #f9fcfd;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -380,14 +380,8 @@ button {
     text-decoration: none;
     text-align: center;
     transition: all .2s ease-in-out;
+    color: #f9ca24;
 }
-
-.close:hover,
-.close:focus {
-    color: #ffffff;
-    background: #000000;
-}
-
 
 
 
@@ -841,7 +835,7 @@ header img {
 
 
 #feature-2 .feature-2-column .box-column-1 .box i {
-    color: #43bccd;
+    color: #000000;
     margin-bottom: 5px;
     font-size: 26px;
 }
@@ -852,6 +846,7 @@ header img {
     font-weight: 700;
     margin-bottom: 5px;
     text-transform: uppercase;
+  
 }
 
 #feature-2 .feature-2-column .box-column-1 .box p {
@@ -865,7 +860,7 @@ header img {
 
 
 #feature-2 .feature-2-column .box-column-2 .box i {
-    color: #43bccd;
+    color: #000000;
     margin-bottom: 5px;
     font-size: 26px;
 }
@@ -1203,7 +1198,7 @@ header img {
 }
 
 #products .product .product-block .product-content .version {
-    color: #a8e0e8;
+    color: #A3AAAE;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1310,7 +1305,7 @@ header img {
 }
 
 #products-2 .product .product-block .product-content .version {
-    color: #a8e0e8;
+    color: #A3AAAE;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1473,7 +1468,7 @@ header img {
 }
 
 #sale .product .product-block .product-sale-content .product-info .version {
-    color: #a2a2a2;
+    color: #A3AAAE;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.5rem;
 }
@@ -1982,7 +1977,7 @@ header img {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background-color: #f2f2f2;
-    border: 2px solid #43bccd;
+    border: 2px solid #f9ca24;
     border-right: none !important;
     border-radius: 25px 0 0 25px;
     background-clip: padding-box;
@@ -1992,7 +1987,7 @@ header img {
 #newsletter .email-box form button {
     display: inline;
     color: #ffffff;
-    background-color: #43bccd;
+    background-color: #f9ca24;
     background-clip: padding-box;
     border-radius: 0 25px 25px 0;
     margin-left: -5px;
@@ -2077,16 +2072,14 @@ header img {
     padding-right: 15px;
 }
 
-#footer .container .row .footer-about-column h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    line-height: 3rem;
-    margin-bottom: 0;
-    text-align: left;
-    font-weight: 700;
-    color: #ffffff;
-}
 
+#footer .container .row .footer-about-column img {
+    width: 80px;
+    display: inline-block;
+    position: relative;
+    left: -26px;
+    
+}
 
 #footer .container .row .footer-about-column p {
     font-family: 'Montserrat', sans-serif;
@@ -2110,8 +2103,36 @@ header img {
 
 #footer .container .row .footer-about-column ul li a {
     color: #ffffff;
+   
 
 }
+
+#footer .container .row .footer-about-column ul li a .im-facebook:hover {
+    color: #3b5998;
+    transition: all .2s ease-in-out;
+}
+
+#footer .container .row .footer-about-column ul li a .im-twitter:hover {
+    color: #1da1f2;
+    transition: all .2s ease-in-out;
+}
+
+#footer .container .row .footer-about-column ul li a .im-google-plus:hover {
+    color: #dd4b39;
+    transition: all .2s ease-in-out;
+}
+
+#footer .container .row .footer-about-column ul li a .im-google-plus:hover {
+    color: #dd4b39;
+    transition: all .2s ease-in-out;
+}
+
+#footer .container .row .footer-about-column ul li a .im-instagram:hover {
+    color: #833ab4;
+    transition: all .2s ease-in-out;
+}
+
+
 
 #footer .container .row .footer-contacts-column {
     width: 45%;
@@ -2153,6 +2174,9 @@ header img {
     font-weight: 700;
 
 }
+
+
+
 
 /*********************** Newsletter **************************/
 
@@ -2540,7 +2564,7 @@ header img {
 
 
     #feature-2 {
-        background: #e9eced;
+        background: #fafafa;
         height: 100%;
         padding-bottom: 20px;
     }
@@ -2567,8 +2591,9 @@ header img {
 
     }
 
+
     #feature-2 .feature-2-column .box-column-1 .box i {
-        color: #43bccd;
+        color: #000000;
         margin-bottom: 10px;
         font-size: 26px;
     }
@@ -2586,6 +2611,8 @@ header img {
         height: 100%;
         padding: 0 20px;
     }
+
+
 
     #gallery {
         position: relative;
