@@ -300,11 +300,7 @@ button {
 
 .modal-content .form-box .order-form .btn-box {
     margin-top: 20px;
-
-
 }
-
-
 
 
 .modal-content .form-box .order-form #custom-select select {
@@ -325,9 +321,6 @@ button {
     background-clip: padding-box;
 
 }
-
-
-
 
 
 
@@ -423,14 +416,16 @@ header #navbar ul {
 }
 
 header #navbar ul li a {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0 10px;
     color: rgb(191, 201, 207);
     font-weight: 300;
     transition: all .2s ease-in-out;
-    font-size: 0.8rem;
+    
     
 
 }
@@ -438,11 +433,29 @@ header #navbar ul li a {
 
 header #navbar ul li a:hover {
     color: #ffffff;
-    border-bottom: 1px solid #f9ca24;
 
 }
 
 
+header #navbar ul li a::after {
+    border-radius: 1em;
+    border-top: 2px solid #f9ca24;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .8s cubic-bezier(0, .5, 0, 1);
+    
+ 
+ }
+
+ header #navbar ul li a:hover::after  {
+    right: 0;
+ 
+ }
+ 
 
 header img {
     margin-top: -3px;
@@ -459,10 +472,28 @@ header img {
 
 .link-color {
     color: #ffffff !important;
-    border-bottom: 1px solid #f9ca24;
+    border-bottom: 2px solid #f9ca24;
     transition: all 1s ease-in-out;
-
 }
+
+.link-color::after {
+    
+    border-radius: 1em;
+    border-top: .1em solid #51d466;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .8s cubic-bezier(0, .5, 0, 1);
+ }
+
+ 
+
+ .link-color:hover::after  {
+    right: 0;
+ 
+ }
 
 
 #navbar .navbar-toggler {
