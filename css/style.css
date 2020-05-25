@@ -65,8 +65,8 @@ button {
 .modal-button {
     background-color: #43bccd;
     background-image: #43bccd;
-    background-image: -webkit-linear-gradient(30deg, #f9c80e  50%, transparent 50%);
-    background-image: linear-gradient(30deg, #f9c80e  50%, transparent 50%);
+    background-image: -webkit-linear-gradient(30deg, #f9c80e 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #f9c80e 50%, transparent 50%);
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -411,7 +411,7 @@ header #navbar ul {
     top: 2px;
     left: -20px;
     justify-content: flex-end;
-    
+
 
 }
 
@@ -425,8 +425,8 @@ header #navbar ul li a {
     color: rgb(191, 201, 207);
     font-weight: 300;
     transition: all .2s ease-in-out;
-    
-    
+
+
 
 }
 
@@ -447,15 +447,15 @@ header #navbar ul li a::after {
     bottom: .14em;
     left: 0;
     transition: right .8s cubic-bezier(0, .5, 0, 1);
-    
- 
- }
 
- header #navbar ul li a:hover::after  {
+
+}
+
+header #navbar ul li a:hover::after {
     right: 0;
- 
- }
- 
+
+}
+
 
 header img {
     margin-top: -3px;
@@ -465,7 +465,7 @@ header img {
 
 .nav-scrolled {
     --text: #333;
-    --text-inverse:#555555;
+    --text-inverse: #555555;
     --background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
@@ -477,7 +477,7 @@ header img {
 }
 
 .link-color::after {
-    
+
     border-radius: 1em;
     border-top: .1em solid #51d466;
     content: "";
@@ -486,14 +486,14 @@ header img {
     bottom: .14em;
     left: 0;
     transition: right .8s cubic-bezier(0, .5, 0, 1);
- }
+}
 
- 
 
- .link-color:hover::after  {
+
+.link-color:hover::after {
     right: 0;
- 
- }
+
+}
 
 
 #navbar .navbar-toggler {
@@ -877,7 +877,7 @@ header img {
     font-weight: 700;
     margin-bottom: 5px;
     text-transform: uppercase;
-  
+
 }
 
 #feature-2 .feature-2-column .box-column-1 .box p {
@@ -972,21 +972,6 @@ header img {
 
 }
 
-#gallery .gallery-content .gallery-list li {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-
-}
-
-
-#gallery .gallery-content .gallery-list li i {
-    font-size: 16px;
-    position: relative;
-    top: 2px;
-    left: -2px;
-    color: #f9ca24
-}
 
 
 
@@ -994,6 +979,15 @@ header img {
     position: relative;
     font-size: 1rem;
     line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#gallery .gallery-content .gallery-list i {
+    color: #f9ca24;
+    position: relative;
+    top:4px;
+
 }
 
 #gallery .gallery-img {
@@ -1006,200 +1000,66 @@ header img {
 }
 
 
-#gallery .gallery-img .slider-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    z-index: 1;
-}
-
-#gallery .gallery-img .slider-container .slides {
-    height: 100% !important;
-    zoom: 1;
-}
-
-
-#gallery .gallery-img .slider-container .slides .slide {
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100% !important;
-    margin: 0;
-    padding: 0;
-
-}
-
-
-#gallery .gallery-img .slider-container .slides #slide-1 {
-    background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
-        url('/img/smartwatch-bg.jpg');
-    width: 100%;
-    float: left;
-    margin-right: -100px;
-    position: relative;
-    opacity: 0;
-    z-index: 1;
-    transition: opacity 2s ease 0s;
-    display: block;
-}
-
-#gallery .gallery-img .slider-container .slides #slide-2 {
-    background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
-        url('/img/smartwatch-bg2.jpeg');
-    width: 100%;
-    float: left;
-    margin-right: -100px;
-    position: relative;
-    opacity: 0;
-    z-index: 1;
-    transition: opacity 2s ease 0s;
-    display: none;
-
-}
-
-#gallery .gallery-img .slider-container .slides #slide-3 {
-    background-image: linear-gradient(90deg, rgba(14, 35, 45, 0.63) 0%, rgba(14, 36, 46, 0.616) 100%),
-        url('/img/smartwatch-bg3.jpeg');
-    width: 100%;
-    float: left;
-    margin-right: -100px;
-    position: relative;
-    opacity: 0;
-    z-index: 1;
-    transition: opacity 2s ease 0s;
-    display: none;
-
-}
-
-#gallery .gallery-img .slider-container .slides .slide .slider-text {
-    position: absolute;
-    left: 18rem;
-    top: 4.5rem;
-    color: #ffffff;
-    z-index: 100;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#gallery .gallery-img .slider-container .slides .slide .slider-text h3 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    margin: 0 0 1.5rem 0;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-#gallery .gallery-img .slider-container .slides .slide .slider-text span {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    margin: 0 0 1.5rem 0;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #f9ca24;
-}
-
-#gallery .gallery-img .slider-container .slides .slide .slider-text p {
-    max-width: 50%;
-    line-height: 2rem;
-    font-size: 1rem;
-}
-
-#gallery .gallery-img .slider-container .slider-button-container {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 13rem;
-    width: 10rem;
-    height: 3rem;
-    z-index: 10;
-}
-
-
-#gallery .gallery-img .slider-container .slider-button-container ul {
-    text-align: center;
-}
-
-
-#gallery .gallery-img .slider-container .slider-button-container ul li {
-    list-style: none;
-    display: inline-block;
-
-}
-
-
-#gallery .gallery-img .slider-container .slider-button-container ul li a {
-    width: 3rem;
-    height: 3rem;
-    top: 0;
-    margin-right: 10px;
-    text-align: center;
-    overflow: visible;
-    color: #f9ca24;
-}
-
-
-#gallery .gallery-img .slider-container .slider-button-container .button-prev,
-.button-next {
-    opacity: 1;
-}
-
-
-#gallery .gallery-img .slider-container .slider-button-container ul li a i {
-    font-size: 32px;
-}
-
 .swiper-container {
     width: 100%;
     height: 100%;
     background: #000;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 130px;
-    
-  }
-
-
-  .parallax-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
-  }
-  .swiper-slide .title {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+
+}
+
+
+
+
+
+.swiper-slide .title {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
-  }
+}
 
-  .swiper-slide .subtitle {
+.swiper-slide .subtitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     color: #f9ca24;
     font-weight: 700;
     margin-bottom: 10px;
-  }
+}
 
-  .swiper-slide .text {
+
+.swiper-slide .text {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     max-width: 400px;
-    line-height: 1.3;
+    line-height: 1.5;
     color: #ffffff;
-  }
+}
 
-  .swiper-button-prev.swiper-button-white {
-      left: 60px;
-  }
+
+.swiper-button-prev.swiper-button-white {
+    left: 60px;
+    top: 330px;
+}
+
+
+.swiper-button-next.swiper-button-white {
+    right: 20px;
+    top: 330px;
+}
+
+
+
 
 
 
@@ -2160,7 +2020,7 @@ header img {
     display: inline-block;
     position: relative;
     left: -26px;
-    
+
 }
 
 #footer .container .row .footer-about-column p {
@@ -2185,7 +2045,7 @@ header img {
 
 #footer .container .row .footer-about-column ul li a {
     color: #ffffff;
-   
+
 
 }
 
@@ -2673,10 +2533,9 @@ header img {
 
     }
 
-
     #feature-2 .feature-2-column .box-column-1 .box i {
-        color: #000000;
-        margin-bottom: 10px;
+        color: #f9ca24;
+        margin-bottom: 5px;
         font-size: 26px;
     }
 
@@ -2698,11 +2557,10 @@ header img {
 
     #gallery {
         position: relative;
-        background-color: #e9eced;
-        height: 100%;
+        background-color: #ffffff;
+        height: 758px;
         overflow: hidden;
     }
-
 
 
     #gallery .gallery-content {
@@ -2716,24 +2574,38 @@ header img {
         margin: 35px 45px;
     }
 
-    #gallery .gallery-content .gallery-list li {
-        font-size: 14px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-    }
+   
 
 
     #gallery .trapeze-gallery-bg {
-        position: relative;
-        top: -5px;
-        left: -17%;
-        width: 70%;
-        height: 100%;
-        background-color: #e9eced;
-        transform: skewX(-7deg);
-        z-index: 5;
+        display: none;
     }
 
+
+    #gallery .gallery-img {
+        position: relative;
+        float: left;
+        width: 100%;
+        right: 0;
+        height: 400px;
+        padding: 0;
+    }
+
+
+    .swiper-slide {
+        padding: 40px 80px;
+    }
+
+    .swiper-button-prev.swiper-button-white {
+        left: 50px;
+        top: 300px;
+    }
+
+
+    .swiper-button-next.swiper-button-white {
+        right: 50px;
+        top: 300px;
+    }
 
 
 
@@ -3356,6 +3228,41 @@ header img {
     }
 
 
+    .swiper-slide {
+        padding: 40px 30px;
+    }
+
+
+.swiper-slide .title {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.swiper-slide .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #f9ca24;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+    .swiper-button-prev.swiper-button-white {
+        left: 50px;
+        top: 320px;
+    }
+
+
+    .swiper-button-next.swiper-button-white {
+        right: 50px;
+        top: 320px;
+    }
+
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -3474,8 +3381,6 @@ header img {
         font-size: 14px;
     }
 
-
-
     #gallery .gallery-content h2 {
         font-size: 32px;
     }
@@ -3483,4 +3388,22 @@ header img {
     #gallery .gallery-content p {
         font-size: 14px;
     }
+
+    .swiper-slide .title {
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .swiper-slide .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        color: #f9ca24;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+
 }

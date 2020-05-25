@@ -126,7 +126,9 @@ for (let i = 0; i < saleBtn.length; i++) {
     btn.addEventListener('click', function() {
     modal.style.display = "block"
 });
+
 }
+
 }
 
 openModal(openButton, saleButton);
@@ -141,6 +143,11 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+
+  // modal error handling
+    let firstName = document.querySelector('#first-name');
+    console.log(firstName);
+
 
 // Carousel 
 
