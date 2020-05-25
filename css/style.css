@@ -866,7 +866,7 @@ header img {
 
 
 #feature-2 .feature-2-column .box-column-1 .box i {
-    color: #000000;
+    color: #f9ca24;
     margin-bottom: 5px;
     font-size: 26px;
 }
@@ -891,7 +891,7 @@ header img {
 
 
 #feature-2 .feature-2-column .box-column-2 .box i {
-    color: #000000;
+    color: #f9ca24;
     margin-bottom: 5px;
     font-size: 26px;
 }
@@ -999,7 +999,7 @@ header img {
 #gallery .gallery-img {
     position: absolute;
     float: right;
-    width: 65%;
+    width: 50%;
     right: 0;
     height: 544px;
     padding: 0;
@@ -1009,7 +1009,7 @@ header img {
 #gallery .gallery-img .slider-container {
     position: relative;
     width: 100%;
-    height: 100% !important;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -1149,9 +1149,60 @@ header img {
     font-size: 32px;
 }
 
-.opacity {
-    opacity: 1;
-}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .swiper-slide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 130px;
+    
+  }
+
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-slide .title {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .swiper-slide .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #f9ca24;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .swiper-slide .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+    color: #ffffff;
+  }
+
+  .swiper-button-prev.swiper-button-white {
+      left: 60px;
+  }
+
+
+
 
 
 /************* products ********************/

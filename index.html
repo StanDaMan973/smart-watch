@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Watch</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
 </head>
 
@@ -335,43 +336,44 @@
                     </ul>
                 </div>
                 <div class="gallery-img">
-                    <div class="slider-container">
-                        <ul class="slides">
-                            <li class="slide" id="slide-1">
-                                <div class="slider-text">
-                                    <h3>RELIABLE
-                                        <span><br>WATER RESISTANT</span></h3>
-                                    <p>Eveniet, ut aliquid ex ea voluptate velit esse, quam nihil. A sapiente delectus.
-                                    </p>
+                    <div class="swiper-container">
+                        <div class="parallax-bg""
+                            data-swiper-parallax="-23%"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg.jpg);">
+                                <div class="title" data-swiper-parallax="-300">COMPREHENSIVE</div>
+                                <div class="subtitle" data-swiper-parallax="-200">WORKOUT APP</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                                        porttitor. </p>
                                 </div>
-                            </li>
-                            <li class="slide" id="slide-2">
-                                <div class="slider-text">
-                                    <h3>COMPREHENSIVE
-                                        <span><br>WORKOUT APP</span></h3>
-                                    <p>Eveniet, ut aliquid ex ea voluptate velit esse, quam nihil. A sapiente delectus.
-                                    </p>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg2.jpeg);">
+                                <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">RELIABLE
                                 </div>
-                            </li>
-                            <li class="slide" id="slide-3">
-                                <div class="slider-text">
-                                    <h3>PERFECT
-                                        <span><br>GPS-TRACKER</span></h3>
-                                    <p>Eveniet, ut aliquid ex ea voluptate velit esse, quam nihil. A sapiente delectus.
-                                    </p>
+                                <div class="subtitle" data-swiper-parallax="-200">WATER RESISTANT</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                                        porttitor. </p>
                                 </div>
-                            </li>
-                        </ul>
-                        <div class="slider-button-container">
-                            <ul class="slider-buttons">
-                                <li>
-                                    <a class="button-prev" ><i class="im im-angle-left-circle"></i></a>
-                                </li>
-                                <li>
-                                    <a class="button-next" ><i class="im im-angle-right-circle"></i></a>
-                                </li>
-                            </ul>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg3.jpeg);">
+                                <div class="title" data-swiper-parallax="-300">PERFECT</div>
+                                <div class="subtitle" data-swiper-parallax="-200">GPS-TRACKER</div>
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                                        porttitor.</p>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
                     </div>
                 </div>
             </div>
@@ -829,7 +831,10 @@
         </div>
     </footer>
 
+
+    <script src="/js/swiper.min.js"></script>
     <script src="/js/smartwatch.js"></script>
+
 </body>
 
 </html>

@@ -144,61 +144,15 @@ window.onclick = function(event) {
 
 // Carousel 
 
-
-let sliderImages = document.querySelectorAll('.slide');
-let leftArrow = document.querySelector('.button-prev'); 
-let rightArrow = document.querySelector('.button-next'); 
-let currentSlide = 0; 
-
-
-function reset() {
-    for (let i = 0; i < sliderImages.length; i++) {
-        sliderImages[i].style.display = "none"; 
-    }
-}
-
-function startSlide() {
-    reset(); 
-    sliderImages[0].style.display = "block"
-    sliderImages[0].style.opacity = 1;
-    
-}
-
-
-
-function slideLeft() {
-    reset();
-    sliderImages[currentSlide - 1].style.display = "block";
-    sliderImages[currentSlide - 1].style.opacity = "1";  
-    currentSlide--;
-   
-}
-
-function slideRight() {
-    reset();
-    sliderImages[currentSlide + 1].style.display = "block";
-    sliderImages[currentSlide + 1].style.opacity = "1";  
-    currentSlide++;
-    
-    
-}
-
-
-leftArrow.addEventListener('click', function() {
-    if (currentSlide === 0) {
-        currentSlide = sliderImages.length; 
-    }
-
-    slideLeft(); 
-}); 
-  
-
-rightArrow.addEventListener('click', function() {
-    if (currentSlide === sliderImages.length - 1) {
-        currentSlide = - 1;     
-    }
-
-    slideRight(); 
-}); 
-
-startSlide();
+var swiper = new Swiper('.swiper-container', {
+    speed: 600,
+    parallax: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
