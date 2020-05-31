@@ -1,17 +1,15 @@
-
-
 //loader 
 
 var loader;
 
 function loadNow(opacity) {
-    if(opacity <= 0) {
+    if (opacity <= 0) {
         displayContent();
 
     } else {
         loader.style.opacity = opacity;
 
-        window.setTimeout(function() {
+        window.setTimeout(function () {
             loadNow(opacity - 0.05)
         }, 50)
 
@@ -19,13 +17,13 @@ function loadNow(opacity) {
 }
 
 function displayContent() {
-	loader.style.display = 'none'; 
+    loader.style.display = 'none';
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	loader = document.querySelector('.loader'); 
-	loadNow(2);
-}); 
+document.addEventListener("DOMContentLoaded", function () {
+    loader = document.querySelector('.loader');
+    loadNow(2);
+});
 
 
 
@@ -88,15 +86,15 @@ navbarToggler.addEventListener('click', navbarToggleClick);
 
 function navbarToggleClick() {
     navbarToggler.classList.toggle('open-navbar-toggler');
-    navbarMenu.classList.toggle('open'); 
+    navbarMenu.classList.toggle('open');
 
 }
 
-navbarLinks.forEach(elm => elm.addEventListener('click', navbarClick));  
+navbarLinks.forEach(elm => elm.addEventListener('click', navbarClick));
 
 function navbarClick() {
-    if(navbarMenu.classList.contains('open')) {
-        navbarToggler.click(); 
+    if (navbarMenu.classList.contains('open')) {
+        navbarToggler.click();
 
     }
 
@@ -107,46 +105,84 @@ function navbarClick() {
 
 // Get the modal
 
-let modal = document.getElementById('myModal'); 
-let openButton = document.querySelectorAll('.bnt-block .blue-button'); 
-let saleButton = document.querySelectorAll('.modal-button'); 
-let closeButton = document.querySelector(".close"); 
+let modal = document.getElementById('myModal');
+let openButton = document.querySelectorAll('.bnt-block .blue-button');
+let saleButton = document.querySelectorAll('.modal-button');
+let closeButton = document.querySelector(".close");
 
 function openModal(saleBtn, productBtn) {
 
-for (let i = 0; i < productBtn.length; i++) {
-    const button = productBtn[i];
-    button.addEventListener('click', function() {
-    modal.style.display = "block"
-});
-}
+    for (let i = 0; i < productBtn.length; i++) {
+        const button = productBtn[i];
+        button.addEventListener('click', function () {
+            modal.style.display = "block"
+        });
+    }
 
-for (let i = 0; i < saleBtn.length; i++) {
-    const btn = saleBtn[i];
-    btn.addEventListener('click', function() {
-    modal.style.display = "block"
-});
+    for (let i = 0; i < saleBtn.length; i++) {
+        const btn = saleBtn[i];
+        btn.addEventListener('click', function () {
+            modal.style.display = "block"
+        });
 
-}
+    }
 
 }
 
 openModal(openButton, saleButton);
 
 
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
     modal.style.display = "none"
 });
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
-  }
+}
 
-  // modal error handling
-    let firstName = document.querySelector('#first-name');
-    console.log(firstName);
+// form error handling
+let form = document.querySelector('#order-form');
+let firstName = document.querySelector('input[type="text"]#fname');
+let lastName = document.querySelector('input[type="text"]#lname');
+let email = document.querySelector('input[type="email"]#email');
+let address = document.querySelector('input[type="text"]#address');
+let city = document.querySelector('input[type="text"]#city');
+let state = document.querySelector('input[type="text"]#state');
+let zipCode = document.querySelector('input[type="text"]#zip-code');
+let phoneNumber = document.querySelector('input[type="text"]#phone-number');
+let green = '#4BB543';
+let red = '#FF0000';
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault;
+
+    checkFields();
+
+});
+
+function checkFields() {
+
+
+    if (firstName.value === '' || firstName.value === null) {
+       
+        
+        
+
+    } else {
+         // activate the success class
+     
+    }
+
+   
+
+}
+checkFields();
+ 
+
+
+
 
 
 // Carousel 
@@ -155,11 +191,11 @@ var swiper = new Swiper('.swiper-container', {
     speed: 600,
     parallax: true,
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
+});
