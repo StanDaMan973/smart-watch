@@ -1,850 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Watch</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Apple Landing Page</title>
+	<link href="/css/styles.min.css" rel="stylesheet">
+	<link href="/css/swiper.min.css" rel="stylesheet">
+	<link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+	<link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="/favicon/site.webmanifest" rel="manifest">
+	<link href="/favicon/safari-pinned-tab.svg" rel="mask-icon">
+	<meta content="#da532c" name="msapplication-TileColor">
+	<meta content="#ffffff" name="theme-color">
 </head>
-
 <body>
-    <div class="loader"></div>
-
-    <section id="cover">
-        <div class="container">
-            <span class="trapeze-bg"></span>
-            <header>
-                <img src="/img/apple-logo.png" alt="apple-logo">
-                <nav id="navbar">
-                    <ul>
-                        <li><a class="link-color" href="#cover">Home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#tech">specification</a></li>
-                        <li><a href="#gallery">gallery</a></li>
-                        <li><a href="#products">products</a></li>
-                        <li><a href="#reviews">Review</a></li>
-                        <li><a href="#newsletter">Contact</a></li>
-                    </ul>
-                    <button class="navbar-toggler">
-                        <span></span>
-                    </button>
-                </nav>
-            </header>
-            <div class="cover-column">
-                <div class="cover-box">
-                    <h2>Apple Watch Series</h2>
-                    <p>Monitor your health. Track your workouts. Get the motivation you need to achieve your fitness
-                        goals. And stay connected to the people and information you care about. With Apple Watch Series
-                        3, you can do it all right from your wrist</p>
-                    <a href="#products" class="blue-button">Buy Now</a>
-                </div>
-
-                <div class="img-box">
-                    <img src="/img/applewatchcover.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <button class="close" id="close-button">X</button>
-            <div class="product-bg"></div>
-            <div class="modal-header">
-                <div class="img-box">
-                    <img src="/img/applewatch-black-left.png" alt="applewatch">
-                </div>
-                <div class="text-box">
-                    <h3>apple watch</h3>
-                    <h4>apple watch series 5</h4>
-                    <p class="price">$150</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consectetur.</p>
-                </div>
-            </div>
-            <div id="form-box" class="form-box">
-                <form id="order-form" class="order-form"  action="/" method="GET">
-                    <h3>Shipping Address</h3>
-                    <div class="input-box">
-                        <input type="text" id="fname" name="firstname" placeholder="Firstname" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="lname" name="lastname" placeholder="Lastname" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="address" name="address" placeholder="Address" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="city" name="city" placeholder="city" required>
-                    </div>
-                    <div class="input-box" id="custom-select">
-                        <select>
-                            <option value="0">Choose Country:</option>
-                            <option value="1">United States</option>
-                            <option value="2">United Kingdom</option>
-                            <option value="3">Mexico</option>
-                            <option value="4">Canada</option>
-                            <option value="5">France</option>
-                            <option value="6">Dominican Republic</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="state" name="state" placeholder="state" required>>
-                      
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="zip-code" name="zip-code" placeholder="zip-code" required>>
-                       
-                    </div>
-                    <div class="input-box">
-                        <input type="text" id="phone-number" name="phone-number" placeholder="phone-number" required>>
-                        
-                    </div>
-                    <div class="btn-box">
-                        <button href="#" class="modal-button">Order Now</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <section id="about" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="about-column">
-                    <div class="about-box">
-                        <h3>THREE RINGS. ONE GOAL.</h3>
-                        <p>Stand, Move,
-                            and Exercise rings
-                            visualize the ways you move each day.
-                            See if you’re sitting too much.
-                            Measure calories burned.
-                            And track how many minutes of exercise you’ve done. You can even share your rings with
-                            friends. Try Activity competitions, and let smart coaching give you a nudge when you need
-                            it.</p>
-                    </div>
-                </div>
-                <div class="img-column">
-                    <div class="img-box">
-                        <img src="/img/applewatch-black.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tech" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="tech-box">
-                    <h3>specifications</h3>
-                    <p>Nostrum exercitationem ullam corporis suscipit laboriosam,
-                        nisi ut aut commodi autem rerum facilis.
-                        Cupiditate non recusandae temporibus autem vel illum</p>
-                </div>
-                <div class="tech-column">
-                    <div class="box">
-                        <i class="im im-diamond-o"></i>
-                        <span>DISPLAY</span>
-                        <p>
-                            The Apple Watch has an LTPO OLED capacitive touchscreen display.
-                            The Apple Watch is 1.78 inches in size
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-gear"></i>
-                        <span>HARDWARE</span>
-                        <p>
-                            The Apple Watch has 32 GB of internal storage also gyro, heart rate (2nd gen).
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-tags"></i>
-                        <span>CONNECTIVITY</span>
-                        <p>
-                            The Apple Watch has Wi-Fi 802.11 b/g/n and GPS. Bluetooth® 5.0, A2DP (stereo Bluetooth)
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-shield"></i>
-                        <span>PROTECTION</span>
-                        <p>
-                            Water resistant up to 50 meters also has anti-heft protection. All-day 18 hour of battery
-                            life
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-light-bulb"></i>
-                        <span>CUSTOMIZE</span>
-                        <p>
-                            Any face can be personalized by selecting apps or shortcuts to features. There are hundreds
-                            to tap into, such as Infograph.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-headphones"></i>
-                        <span>WATCH OS</span>
-                        <p>
-                            This Apple Watch supports the current version of the watchOS, watchOS 6, watchOS 6 requires
-                            an iPhone 6s or later running iOS 13 or later.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-picture-o"></i>
-                        <span>DESIGN</span>
-                        <p>
-                            Dimensions are 44 x 38 x 10.7 mm and It weights over 47.8 grams
-                        </p>
-                    </div>
-                    <div class="box">
-                        <i class="im im-rocket"></i>
-                        <span>EASY TO USE</span>
-                        <p>Delectus, ut et iusto odio tenetur dignissimos ducimus,
-                            qui sapiente sequi nesciunt delectus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="quick">
-        <div class="container">
-            <div class="row">
-                <div class="text-column">
-                    <div class="text-box">
-                        <h2>Take your workouts further</h2>
-                        <p>Track popular workouts like yoga, cycling, swimming, and high-intensity interval training.
-                            Track your runs with advanced features for runners like cadence and pace alerts.
-                            Pair wirelessly with compatible gym equipment.
-                            And stay motivated by streaming Apple Music and Apple Podcasts.
-                        </p>
-                        <a href="#products" class="blue-button">Buy Now</a>
-                    </div>
-                </div>
-                <div class="img-column">
-                    <div class="img-box">
-                        <img src="/img/applewatch-red.png" alt="red apple Watch">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="instant">
-        <div class="container">
-            <div class="row">
-                <div class="img-column">
-                    <div class="img-box">
-                        <img src="/img/applewatch-blue.png" alt="fitbit">
-                    </div>
-                </div>
-                <div class="text-column">
-                    <div class="text-box">
-                        <h2>Keep your health top of mind</h2>
-                        <p>Monitor your heart rate and get warnings when an unusually high or low heart rate is
-                            detected.
-                            Apple Watch can also screen for irregular heart
-                            rhythm that is suggestive of atrial fibrillation.
-                            Emergency SOS lets you initiate an immediate call for help.
-                            The Breathe app can help you better manage everyday stress.
-                            And you can choose from a host of health apps to support your specific routines or goals
-                        </p>
-                        <a href="#products" class="blue-button">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="feature-2">
-        <div class="container">
-            <div class="row">
-                <div class="feature-2-box">
-                    <h2>FEATURES </h2>
-                    <p>Use Apple Watch features to the max. More features you're Apple smartwatch can do</p>
-                </div>
-                <div class="feature-2-column">
-                    <div class="box-column-1">
-                        <div class="box">
-                            <i class="im im-mobile"></i>
-                            <h4>Take a Screenshot</h4>
-                            <p>All Apple Watch devices can take screenshots when you push the Digital Crown and the
-                                action button below it at the same time. </p>
-                        </div>
-                        <div class="box">
-                            <i class="im im-user-settings"></i>
-                            <h4>Take an ECG reading</h4>
-                            <p>It's an important feature that can help detect if you've got atrial fibrillation, so it's
-                                worth checking out at least once. </p>
-                        </div>
-                        <div class="box">
-                            <i class="im im-gear"></i>
-                            <h4>wrist-raise action</h4>
-                            <p> Now, when you raise your wrist you'll see the last app you were using.
-                                You can also do it from within the Apple Watch app on your iPhone</p>
-                        </div>
-                    </div>
-
-                    <div class="img-box">
-                        <img src="/img/applewatch-black-frontface.png" alt="">
-                    </div>
-
-                    <div class="box-column-2">
-                        <div class="box">
-                            <i class="im im-pulse"></i>
-                            <h4>Use the Breathe app</h4>
-                            <p>If you find yourself getting stressed in the day, you may find it useful to tap into the
-                                Apple Watch Breathe app.</p>
-                        </div>
-                        <div class="box">
-                            <i class="im im-link"></i>
-                            <h4>Chain your workouts</h4>
-                            <p>you can now chain together workouts, which means less time rubbing those sweaty fingers
-                                around the screen.</p>
-                        </div>
-                        <div class="box">
-                            <i class="im im-accessibility"></i>
-                            <h4>Sharing Activity rings</h4>
-                            <p> fitness tracker fraternity is its Activity platform. That's where all of your daily
-                                movements are recorded. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="gallery" class="section">
-        <div class="container">
-            <div class="row">
-                <span class="trapeze-gallery-bg"></span>
-                <div class="gallery-content">
-                    <h2>Gallery</h2>
-                    <p>Fugit, sed ut et expedita distinctio minima veniam quis. Quaerat voluptatem sequi nesciunt, neque
-                        porro quisquam est. Dolores eos, qui dolorem eum iure reprehenderit.</p>
-                    <ul class="gallery-list">
-                        <li><i class="im im-angle-right"></i> Perfect GPS-Trackers</li>
-                        <li><i class="im im-angle-right"></i> Reliable Water Resistant</li>
-                        <li><i class="im im-angle-right"></i> Comprehensive Workout App</li>
-                    </ul>
-                </div>
-                <div class="gallery-img">
-                    <div class="swiper-container">
-                        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg.jpg);">
-                                <div class="title" data-swiper-parallax="-300">COMPREHENSIVE</div>
-                                <div class="subtitle" data-swiper-parallax="-200">WORKOUT APP</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
-                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
-                                        porttitor. </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg2.jpeg);">
-                                <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">RELIABLE
-                                </div>
-                                <div class="subtitle" data-swiper-parallax="-200">WATER RESISTANT</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
-                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
-                                        porttitor. </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="background-image: url(/img/smartwatch-bg4.jpg);">
-                                <div class="title" data-swiper-parallax="-300">PERFECT</div>
-                                <div class="subtitle" data-swiper-parallax="-200">GPS-TRACKER</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
-                                        velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
-                                        porttitor.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination-white"></div>
-                        <!-- Add Navigation -->
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="swiper-button-next swiper-button-white"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="product-box">
-                    <h2>PRODUCTS</h2>
-                    <p> Voluptatem, quia non numquam eius modi tempora incidunt,
-                        ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
-                </div>
-                <div id="product-1" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 3</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-black-left.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="product-2" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 3</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-black-left.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="product-3" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 3</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-black-left.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="products-2" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="product-box">
-                    <h2>PRODUCTS</h2>
-                    <p> Voluptatem, quia non numquam eius modi tempora incidunt,
-                        ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
-                </div>
-                <div id="product-1" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 5</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-white.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="product-2" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 5</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-white.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="product-3" class="product">
-                    <div class="product-block">
-                        <div class="product-bg"></div>
-                        <div class="product-content">
-                            <h3>Apple Watch</h3>
-                            <p class="version">Apple Watch Series 5</p>
-                            <span>$150</span>
-
-                            <div class="product-img">
-                                <img src="/img/applewatch-white.png" alt="product">
-                            </div>
-
-                            <div class="bnt-block">
-                                <a href="#order" class="blue-button" title="Buy Now">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sale" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="sale-box">
-                    <h2>ON SALE</h2>
-                    <p> Voluptatem, quia non numquam eius modi tempora incidunt,
-                        ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
-                </div>
-                <div id="sale-product-1" class="product">
-                    <div class="product-block">
-                        <div class="product-bg">
-                            <div class="bg-img"></div>
-                            <div class="bg-content"></div>
-                        </div>
-                        <div class="product-sale-img">
-                            <div class="product-sale-container">
-                                <img src="/img/applewatch-black-left.png" alt="applewatch">
-                            </div>
-                        </div>
-                        <div class="product-sale-content">
-                            <div class="product-info">
-                                <h3>Apple Watch</h3>
-                                <p class="version">Apple Watch Series 3</p>
-                                <span class="sale">$150</span> <span class="sale-price">$130</span>
-
-                                <p class="text">Corporis suscipit dolorem, nisi, totam rem aperiam eaque ipsa quasi
-                                    architecto.</p>
-
-                                <div class="sale-bnt-block">
-                                    <button class="modal-button" title="Buy Now">Buy Now</ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="sale-product-2" class="product">
-                    <div class="product-block">
-                        <div class="product-bg">
-                            <div class="bg-img"></div>
-                            <div class="bg-content"></div>
-                        </div>
-                        <div class="product-sale-img">
-                            <div class="product-sale-container">
-                                <img src="/img/applewatch-white.png" alt="applewatch">
-                            </div>
-                        </div>
-                        <div class="product-sale-content">
-                            <div class="product-info">
-                                <h3>Apple Watch</h3>
-                                <p class="version">Apple Watch Series 5</p>
-                                <span class="sale">$225</span> <span class="sale-price">$160</span>
-
-                                <p class="text">Corporis suscipit dolorem, nisi, totam rem aperiam eaque ipsa quasi
-                                    architecto.</p>
-
-                                <div class="sale-bnt-block">
-                                    <button class="modal-button" title="Buy Now">Buy Now</>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-
-    <section id="video" class="video-loaded">
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/-gXPwYpPeXo?rel=0&amp;autoplay=1&mute=1"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </section>
-
-    <section id="FAQ">
-        <div class="container">
-            <div class="row">
-                <div class="faq-box">
-                    <h2>FAQ</h2>
-                    <p> Iusto odio dignissimos ducimus, qui explicabo minima veniam dolorem. Nihil impedit, quo voluptas
-                        assumenda est, qui ratione voluptatem sequi nesciunt esse neque cumque nihil molestiae</p>
-                </div>
-                <div class="faq-column">
-                    <div class="column">
-                        <h4>Getting Started</h4>
-                        <p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi
-                            optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id,
-                            quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
-                    </div>
-                    <div class="column">
-                        <h4> How To Set Up The Gadget?</h4>
-                        <p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi
-                            optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id,
-                            quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
-                    </div>
-                    <div class="column">
-                        <h4>How To Use</h4>
-                        <p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi
-                            optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id,
-                            quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="download">
-        <div class="overlay-download"></div>
-        <div class="container">
-            <div class="row">
-                <div class="download-box">
-                    <div class="colum-1">
-                        <h2>DOWNLOAD <span>AWESOME</span> APP</h2>
-                        <p>Alias consequatur aut rerum hic tenetur a sapiente delectus. Sunt, explicabo laboriosam, nisi
-                            ut perspiciatis, unde omnis dolor sit, amet consectetur.</p>
-                        <div class="img-box">
-                            <img src="/img/playstore.png" alt="apple">
-                        </div>
-                    </div>
-                    <div class="colum-2">
-                        <div class="img-box">
-                            <img src="/img/applewatch-black-left.png" alt="applewatch">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="team-members">
-        <div class="container">
-            <div class="row">
-                <div class="team-box">
-                    <h2>OUR TEAM</h2>
-                    <p>
-                        Numquam eius modi tempora incidunt, ut et harum quidem rerum facilis. Odit aut rerum hic tenetur
-                        a sapiente delectus. Repudiandae sint et quas molestias excepturi sint obcaecati. Ipsam
-                        voluptatem, quia dolor sit, aspernatur.
-                    </p>
-                </div>
-                <div class="team-column">
-                    <div id="member-1" class="team-member">
-                        <div class="team-block">
-                            <div class="team-img-block">
-                                <div class="team-img">
-                                    <img src="/img/member-1.jpg" alt="member-1">
-                                </div>
-                                <div class="team-img-overlay"></div>
-                            </div>
-                            <h3>Cody Rounds</h3>
-                            <span>QA Engineer</span>
-                        </div>
-                    </div>
-                    <div id="member-2" class="team-member">
-                        <div class="team-block">
-                            <div class="team-img-block">
-                                <div class="team-img">
-                                    <img src="/img/member-2.jpg" alt="member-1">
-                                </div>
-                                <div class="team-img-overlay"></div>
-                            </div>
-                            <h3>Lacey Whitfield</h3>
-                            <span>Senior Developer</span>
-                        </div>
-                    </div>
-                    <div id="member-3" class="team-member">
-                        <div class="team-block">
-                            <div class="team-img-block">
-                                <div class="team-img">
-                                    <img src="/img/member-3.jpg" alt="member-1">
-                                </div>
-                                <div class="team-img-overlay"></div>
-                            </div>
-                            <h3>Karem Montés</h3>
-                            <span>Designer</span>
-                        </div>
-                    </div>
-                    <div id="member-4" class="team-member">
-                        <div class="team-block">
-                            <div class="team-img-block">
-                                <div class="team-img">
-                                    <img src="/img/member-4.jpg" alt="member-1">
-                                </div>
-                                <div class="team-img-overlay"></div>
-                            </div>
-                            <h3>Mark Alessi</h3>
-                            <span>Lead Engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="title-box">
-                    <h2>reviews<h2>
-                            <p>
-                                Quisquam est, omnis dolor sit, aspernatur aut odit. Voluptatum deleniti atque corrupti,
-                                quos dolores et voluptates repudiandae sint et perferendis doloribus asperiores
-                                molestiae.
-                            </p>
-                </div>
-                <div class="review-column">
-                    <div id="review-box-1" class="review-box">
-                        <p>Voluptates repudiandae sint et accusamus et sunt dolore. Dignissimos ducimus, qui blanditiis
-                            praesentium voluptatum deleniti atque corrupti, quos dolores. Nobis est eligendi optio,
-                            cumque nihil impedit. Facere possimus,
-                            omnis dolor sit, aspernatur aut perferendis.
-                        </p>
-                        <div class="author">
-                            <img src="/img/member-1.jpg" alt="">
-                            <h4>Jody Logan</h4>
-                            <p>CEO, First Company</p>
-                        </div>
-                    </div>
-                    <div id="review-box-2" class="review-box">
-                        <p>Voluptates repudiandae sint et accusamus et sunt dolore. Dignissimos ducimus, qui blanditiis
-                            praesentium voluptatum deleniti atque corrupti, quos dolores. Nobis est eligendi optio,
-                            cumque nihil impedit. Facere possimus,
-                            omnis dolor sit, aspernatur aut perferendis.
-                        </p>
-                        <div class="author">
-                            <img src="/img/member-1.jpg" alt="">
-                            <h4>Jody Logan</h4>
-                            <p>Co-founder, Second Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="customers-box">
-                    <h3>OUR CUSTOMERS</h3>
-                    <div class="customer-column">
-                        <div class="customer-box">
-                            <img src="/img/att.png" alt="AT&T">
-                        </div>
-                        <div class="customer-box">
-                            <img src="/img/verzion.png" alt="AT&T">
-                        </div>
-                        <div class="customer-box">
-                            <img src="/img/t-mobile.png" alt="AT&T">
-                        </div>
-                        <div class="customer-box">
-                            <img src="/img/sprint.png" alt="AT&T">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="buy-now">
-        <div class="container">
-            <div class="row">
-                <div class="buy-box">
-                    <h2>BUY THE APPLE WATCH TODAY</h2>
-                    <div class="center">
-                        <a href="#products" id="buy-now-button" class="blue-button" title="Buy Now">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="title-box">
-                    <h2>NEWSLETTER</h2>
-                    <p>Iusto odio dignissimos ducimus, qui dolorem. Nihil impedit, quo voluptas assumenda est, qui
-                        ratione voluptatem sequi aboriosam, nisi ut perspiciatis nesciunt neque. Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit. Sunt, earum?</p>
-                </div>
-                <div class="email-box">
-                    <form action="POST" id="newsletter">
-                        <input id="newsletter-email" type="text" name="newsletter-email" placeholder="Enter you email">
-                        <button id="newsletter-submit" type="submit" class="button submit-button">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="footer" class="section">
-        <div class="footer-bg">
-            <div class="footer-bg-img"></div>
-            <div class="footer-bg-overlay"></div>
-            <span class="trapeze-footer-bg"></span>
-        </div>
-        <div class="container footer-first-line">
-            <div class="row">
-                <div class="footer-about-column">
-                    <img src="/img/apple-logo.png" alt="">
-                    <p>
-                        Nobis est eligendi optio, cumque nihil molestiae. Ea voluptate velit aliquid ex ea voluptate
-                        velit voluptatem accusantium doloremque laudantium esse, quam nihil impedit, quo minus id, quod
-                        maxime.
-                    </p>
-                    <ul class="footer-social-icons">
-                        <li><a href="#" title="Facebook"><i class="im im-facebook"></i></a></li>
-                        <li><a href="#" title="Twitter"><i class="im im-twitter"></i></a></li>
-                        <li><a href="#" title="Google Plus"><i class="im im-google-plus"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="im im-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-contacts-column">
-                    <h2><span class="text-notice">Get In Touch</span></h2>
-                    <p>If you have any questions or suggestions, please contact us, or you can come to visit us in our
-                        cozy office.</p>
-                    <ul>
-                        <li><strong>Phone:</strong> (+11) 123-555-4567</li>
-                        <li><strong>Email:</strong> mail@example.com</li>
-                        <li><strong>Address:</strong> 1465 Mountain St, CA 91104, USA</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="/js/swiper.min.js"></script>
-    <script src="/js/smartwatch.js"></script>
-
+	<div class="loader"></div>
+	<section id="cover">
+		<div class="container">
+			<span class="trapeze-bg"></span>
+			<header>
+				<img alt="apple-logo" src="/img/apple-logo.png">
+				<nav id="navbar">
+					<ul>
+						<li>
+							<a class="link-color" href="#cover">Home</a>
+						</li>
+						<li>
+							<a href="#about">about</a>
+						</li>
+						<li>
+							<a href="#tech">specification</a>
+						</li>
+						<li>
+							<a href="#gallery">gallery</a>
+						</li>
+						<li>
+							<a href="#products">products</a>
+						</li>
+						<li>
+							<a href="#reviews">Review</a>
+						</li>
+						<li>
+							<a href="#newsletter">Contact</a>
+						</li>
+					</ul><button class="navbar-toggler"><span></span></button>
+				</nav>
+			</header>
+			<div class="cover-column">
+				<div class="cover-box">
+					<h2>Apple Watch Series</h2>
+					<p>Monitor your health. Track your workouts. Get the motivation you need to achieve your fitness goals. And stay connected to the people and information you care about. With Apple Watch Series 3, you can do it all right from your wrist</p><a class="blue-button" href="#products">Buy Now</a>
+				</div>
+				<div class="img-box"><img alt="" src="/img/applewatchcover.png"></div>
+			</div>
+		</div>
+	</section>
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+			<button class="close" id="close-button">X</button>
+			<div class="product-bg"></div>
+			<div class="modal-header">
+				<div class="img-box"><img alt="applewatch" src="/img/applewatch-black-left.png"></div>
+				<div class="text-box">
+					<h3>apple watch</h3>
+					<h4>apple watch series 5</h4>
+					<p class="price">$150</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consectetur.</p>
+				</div>
+			</div>
+			<div class="form-box" id="form-box">
+				<form action="/" class="order-form" id="order-form" method="get" name="order-form">
+					<h3>Shipping Address</h3>
+					<div class="input-box">
+						<input id="fname" name="firstname" placeholder="Firstname" required="" type="text">
+					</div>
+					<div class="input-box">
+						<input id="lname" name="lastname" placeholder="Lastname" required="" type="text">
+					</div>
+					<div class="input-box">
+						<input id="email" name="email" placeholder="Email" required="" type="email">
+					</div>
+					<div class="input-box">
+						<input id="address" name="address" placeholder="Address" required="" type="text">
+					</div>
+					<div class="input-box">
+						<input id="city" name="city" placeholder="city" required="" type="text">
+					</div>
+					<div class="input-box" id="custom-select">
+						<select>
+							<option value="0">
+								Choose Country:
+							</option>
+							<option value="1">
+								United States
+							</option>
+							<option value="2">
+								United Kingdom
+							</option>
+							<option value="3">
+								Mexico
+							</option>
+							<option value="4">
+								Canada
+							</option>
+							<option value="5">
+								France
+							</option>
+							<option value="6">
+								Dominican Republic
+							</option>
+						</select>
+					</div>
+					<div class="input-box">
+						<input id="state" name="state" placeholder="state" required="" type="text">&gt;
+					</div>
+					<div class="input-box">
+						<input id="zip-code" name="zip-code" placeholder="zip-code" required="" type="text">&gt;
+					</div>
+					<div class="input-box">
+						<input id="phone-number" name="phone-number" placeholder="phone-number" required="" type="text">&gt;
+					</div>
+					<div class="btn-box">
+						<button class="modal-button">Order Now</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<section class="section" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-column">
+					<div class="about-box">
+						<h3>THREE RINGS. ONE GOAL.</h3>
+						<p>Stand, Move, and Exercise rings visualize the ways you move each day. See if you’re sitting too much. Measure calories burned. And track how many minutes of exercise you’ve done. You can evenshare your rings with friends. Try Activity competitions, and let smart coaching give you a nudge when you need it.</p>
+					</div>
+				</div>
+				<div class="img-column">
+					<div class="img-box"><img alt="" src="/img/applewatch-black.png"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="tech">
+		<div class="container">
+			<div class="row">
+				<div class="tech-box">
+					<h3>specifications</h3>
+					<p>Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aut commodi autem rerum facilis. Cupiditate non recusandae temporibus autem vel illum</p>
+				</div>
+				<div class="tech-column">
+					<div class="box">
+						<i class="im im-diamond-o"></i> <span>DISPLAY</span>
+						<p>The Apple Watch has an LTPO OLED capacitive touchscreen display. The Apple Watch is 1.78 inches in size</p>
+					</div>
+					<div class="box">
+						<i class="im im-gear"></i> <span>HARDWARE</span>
+						<p>The Apple Watch has 32 GB of internal storage also gyro, heart rate (2nd gen).</p>
+					</div>
+					<div class="box">
+						<i class="im im-tags"></i> <span>CONNECTIVITY</span>
+						<p>The Apple Watch has Wi-Fi 802.11 b/g/n and GPS. Bluetooth® 5.0, A2DP (stereo Bluetooth)</p>
+					</div>
+					<div class="box">
+						<i class="im im-shield"></i> <span>PROTECTION</span>
+						<p>Water resistant up to 50 meters also has anti-heft protection. All-day 18 hour of battery life</p>
+					</div>
+					<div class="box">
+						<i class="im im-light-bulb"></i> <span>CUSTOMIZE</span>
+						<p>Any face can be personalized by selecting apps or shortcuts to features. There are hundreds to tap into, such as Infograph.</p>
+					</div>
+					<div class="box">
+						<i class="im im-headphones"></i> <span>WATCH OS</span>
+						<p>This Apple Watch supports the current version of the watchOS, watchOS 6, watchOS 6 requires an iPhone 6s or later running iOS 13 or later.</p>
+					</div>
+					<div class="box">
+						<i class="im im-picture-o"></i> <span>DESIGN</span>
+						<p>Dimensions are 44 x 38 x 10.7 mm and It weights over 47.8 grams</p>
+					</div>
+					<div class="box">
+						<i class="im im-rocket"></i> <span>EASY TO USE</span>
+						<p>Delectus, ut et iusto odio tenetur dignissimos ducimus, qui sapiente sequi nesciunt delectus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="quick">
+		<div class="container">
+			<div class="row">
+				<div class="text-column">
+					<div class="text-box">
+						<h2>Take your workouts further</h2>
+						<p>Track popular workouts like yoga, cycling, swimming, and high-intensity interval training. Track your runs with advanced features for runners like cadence and pace alerts. Pair wirelessly with compatible gym equipment. And stay motivated by streaming Apple Music and Apple Podcasts.</p><a class="blue-button" href="#products">Buy Now</a>
+					</div>
+				</div>
+				<div class="img-column">
+					<div class="img-box"><img alt="red apple Watch" src="/img/applewatch-red.png"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="instant">
+		<div class="container">
+			<div class="row">
+				<div class="img-column">
+					<div class="img-box"><img alt="fitbit" src="/img/applewatch-blue.png"></div>
+				</div>
+				<div class="text-column">
+					<div class="text-box">
+						<h2>Keep your health top of mind</h2>
+						<p>Monitor your heart rate and get warnings when an unusually high or low heart rate is detected. Apple Watch can also screen for irregular heart rhythm that is suggestive of atrial fibrillation. Emergency SOS lets you initiate an immediate call for help. The Breathe app can help you better manage everyday stress. And you can choose from a host of health apps to support your specific routines or goals</p><a class="blue-button" href="#products">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="feature-2">
+		<div class="container">
+			<div class="row">
+				<div class="feature-2-box">
+					<h2>FEATURES</h2>
+					<p>Use Apple Watch features to the max. More features you're Apple smartwatch can do</p>
+				</div>
+				<div class="feature-2-column">
+					<div class="box-column-1">
+						<div class="box">
+							<i class="im im-mobile"></i>
+							<h4>Take a Screenshot</h4>
+							<p>All Apple Watch devices can take screenshots when you push the Digital Crown and the action button below it at the same time.</p>
+						</div>
+						<div class="box">
+							<i class="im im-user-settings"></i>
+							<h4>Take an ECG reading</h4>
+							<p>It's an important feature that can help detect if you've got atrial fibrillation, so it's worth checking out at least once.</p>
+						</div>
+						<div class="box">
+							<i class="im im-gear"></i>
+							<h4>wrist-raise action</h4>
+							<p>Now, when you raise your wrist you'll see the last app you were using. You can also do it from within the Apple Watch app on your iPhone</p>
+						</div>
+					</div>
+					<div class="img-box"><img alt="" src="/img/applewatch-black-frontface.png"></div>
+					<div class="box-column-2">
+						<div class="box">
+							<i class="im im-pulse"></i>
+							<h4>Use the Breathe app</h4>
+							<p>If you find yourself getting stressed in the day, you may find it useful to tap into the Apple Watch Breathe app.</p>
+						</div>
+						<div class="box">
+							<i class="im im-link"></i>
+							<h4>Chain your workouts</h4>
+							<p>you can now chain together workouts, which means less time rubbing those sweaty fingers around the screen.</p>
+						</div>
+						<div class="box">
+							<i class="im im-accessibility"></i>
+							<h4>Sharing Activity rings</h4>
+							<p>fitness tracker fraternity is its Activity platform. That's where all of your daily movements are recorded.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="gallery">
+		<div class="container">
+			<div class="row">
+				<span class="trapeze-gallery-bg"></span>
+				<div class="gallery-content">
+					<h2>Gallery</h2>
+					<p>Fugit, sed ut et expedita distinctio minima veniam quis. Quaerat voluptatem sequi nesciunt, neque porro quisquam est. Dolores eos, qui dolorem eum iure reprehenderit.</p>
+					<ul class="gallery-list">
+						<li><i class="im im-angle-right"></i> Perfect GPS-Trackers</li>
+						<li><i class="im im-angle-right"></i> Reliable Water Resistant</li>
+						<li><i class="im im-angle-right"></i> Comprehensive Workout App</li>
+					</ul>
+				</div>
+				<div class="gallery-img">
+					<div class="swiper-container">
+						<div class="parallax-bg" data-swiper-parallax="-23%"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image: url(/img/smartwatch-bg.jpg);">
+								<div class="title" data-swiper-parallax="-300">
+									COMPREHENSIVE
+								</div>
+								<div class="subtitle" data-swiper-parallax="-200">
+									WORKOUT APP
+								</div>
+								<div class="text" data-swiper-parallax="-100">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.</p>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image: url(/img/smartwatch-bg2.jpeg);">
+								<div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
+									RELIABLE
+								</div>
+								<div class="subtitle" data-swiper-parallax="-200">
+									WATER RESISTANT
+								</div>
+								<div class="text" data-swiper-parallax="-100">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.</p>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image: url(/img/smartwatch-bg4.jpg);">
+								<div class="title" data-swiper-parallax="-300">
+									PERFECT
+								</div>
+								<div class="subtitle" data-swiper-parallax="-200">
+									GPS-TRACKER
+								</div>
+								<div class="text" data-swiper-parallax="-100">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor.</p>
+								</div>
+							</div>
+						</div><!-- Add Pagination -->
+						<div class="swiper-pagination swiper-pagination-white"></div><!-- Add Navigation -->
+						<div class="swiper-button-prev swiper-button-white"></div>
+						<div class="swiper-button-next swiper-button-white"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="products">
+		<div class="container">
+			<div class="row">
+				<div class="product-box">
+					<h2>PRODUCTS</h2>
+					<p>Voluptatem, quia non numquam eius modi tempora incidunt, ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
+				</div>
+				<div class="product" id="product-1">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 3</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-black-left.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product-2">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 3</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-black-left.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product-3">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 3</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-black-left.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="products-2">
+		<div class="container">
+			<div class="row">
+				<div class="product-box">
+					<h2>PRODUCTS</h2>
+					<p>Voluptatem, quia non numquam eius modi tempora incidunt, ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
+				</div>
+				<div class="product" id="product-1">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 5</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-white.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product-2">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 5</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-white.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="product-3">
+					<div class="product-block">
+						<div class="product-bg"></div>
+						<div class="product-content">
+							<h3>Apple Watch</h3>
+							<p class="version">Apple Watch Series 5</p><span>$150</span>
+							<div class="product-img"><img alt="product" src="/img/applewatch-white.png"></div>
+							<div class="bnt-block">
+								<a class="blue-button" href="#order" title="Buy Now">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="sale">
+		<div class="container">
+			<div class="row">
+				<div class="sale-box">
+					<h2>ON SALE</h2>
+					<p>Voluptatem, quia non numquam eius modi tempora incidunt, ut aliquid. Aperiam eaque ipsa, quae ab illo.</p>
+				</div>
+				<div class="product" id="sale-product-1">
+					<div class="product-block">
+						<div class="product-bg">
+							<div class="bg-img"></div>
+							<div class="bg-content"></div>
+						</div>
+						<div class="product-sale-img">
+							<div class="product-sale-container"><img alt="applewatch" src="/img/applewatch-black-left.png"></div>
+						</div>
+						<div class="product-sale-content">
+							<div class="product-info">
+								<h3>Apple Watch</h3>
+								<p class="version">Apple Watch Series 3</p><span class="sale">$150</span> <span class="sale-price">$130</span>
+								<p class="text">Corporis suscipit dolorem, nisi, totam rem aperiam eaque ipsa quasi architecto.</p>
+								<div class="sale-bnt-block">
+									<button class="modal-button" title="Buy Now">Buy Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product" id="sale-product-2">
+					<div class="product-block">
+						<div class="product-bg">
+							<div class="bg-img"></div>
+							<div class="bg-content"></div>
+						</div>
+						<div class="product-sale-img">
+							<div class="product-sale-container"><img alt="applewatch" src="/img/applewatch-white.png"></div>
+						</div>
+						<div class="product-sale-content">
+							<div class="product-info">
+								<h3>Apple Watch</h3>
+								<p class="version">Apple Watch Series 5</p><span class="sale">$225</span> <span class="sale-price">$160</span>
+								<p class="text">Corporis suscipit dolorem, nisi, totam rem aperiam eaque ipsa quasi architecto.</p>
+								<div class="sale-bnt-block">
+									<button class="modal-button" title="Buy Now">Buy Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="video-loaded" id="video">
+		<iframe allowfullscreen frameborder="0" height="500px" src="https://www.youtube.com/embed/-gXPwYpPeXo?rel=0&amp;autoplay=1&mute=1" width="100%"></iframe>
+	</section>
+	<section id="FAQ">
+		<div class="container">
+			<div class="row">
+				<div class="faq-box">
+					<h2>FAQ</h2>
+					<p>Iusto odio dignissimos ducimus, qui explicabo minima veniam dolorem. Nihil impedit, quo voluptas assumenda est, qui ratione voluptatem sequi nesciunt esse neque cumque nihil molestiae</p>
+				</div>
+				<div class="faq-column">
+					<div class="column">
+						<h4>Getting Started</h4>
+						<p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id, quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
+					</div>
+					<div class="column">
+						<h4>How To Set Up The Gadget?</h4>
+						<p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id, quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
+					</div>
+					<div class="column">
+						<h4>How To Use</h4>
+						<p>Aspernatur aut rerum facilis est eligendi optio, cumque nihil molestiae. Nobis est eligendi optio, cumque nihil molestiae. Ea voluptate velit esse, quam nihil impedit, quo minus id, quod maxime. Vitae dicta sunt, explicabo minima veniam, quis nostrum exercitationem.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="download">
+		<div class="overlay-download"></div>
+		<div class="container">
+			<div class="row">
+				<div class="download-box">
+					<div class="colum-1">
+						<h2>DOWNLOAD <span>AWESOME</span> APP</h2>
+						<p>Alias consequatur aut rerum hic tenetur a sapiente delectus. Sunt, explicabo laboriosam, nisi ut perspiciatis, unde omnis dolor sit, amet consectetur.</p>
+						<div class="img-box"><img alt="apple" src="/img/playstore.png"></div>
+					</div>
+					<div class="colum-2">
+						<div class="img-box"><img alt="applewatch" src="/img/applewatch-black-left.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="team-members">
+		<div class="container">
+			<div class="row">
+				<div class="team-box">
+					<h2>OUR TEAM</h2>
+					<p>Numquam eius modi tempora incidunt, ut et harum quidem rerum facilis. Odit aut rerum hic tenetur a sapiente delectus. Repudiandae sint et quas molestias excepturi sint obcaecati. Ipsam voluptatem, quia dolor sit, aspernatur.</p>
+				</div>
+				<div class="team-column">
+					<div class="team-member" id="member-1">
+						<div class="team-block">
+							<div class="team-img-block">
+								<div class="team-img"><img alt="member-1" src="/img/member-1.jpg"></div>
+								<div class="team-img-overlay"></div>
+							</div>
+							<h3>Cody Rounds</h3><span>QA Engineer</span>
+						</div>
+					</div>
+					<div class="team-member" id="member-2">
+						<div class="team-block">
+							<div class="team-img-block">
+								<div class="team-img"><img alt="member-1" src="/img/member-2.jpg"></div>
+								<div class="team-img-overlay"></div>
+							</div>
+							<h3>Lacey Whitfield</h3><span>Senior Developer</span>
+						</div>
+					</div>
+					<div class="team-member" id="member-3">
+						<div class="team-block">
+							<div class="team-img-block">
+								<div class="team-img"><img alt="member-1" src="/img/member-3.jpg"></div>
+								<div class="team-img-overlay"></div>
+							</div>
+							<h3>Karem Montés</h3><span>Designer</span>
+						</div>
+					</div>
+					<div class="team-member" id="member-4">
+						<div class="team-block">
+							<div class="team-img-block">
+								<div class="team-img"><img alt="member-1" src="/img/member-4.jpg"></div>
+								<div class="team-img-overlay"></div>
+							</div>
+							<h3>Mark Alessi</h3><span>Lead Engineer</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="title-box">
+					<h2>reviews</h2>
+					<p>Quisquam est, omnis dolor sit, aspernatur aut odit. Voluptatum deleniti atque corrupti, quos dolores et voluptates repudiandae sint et perferendis doloribus asperiores molestiae.</p>
+				</div>
+				<div class="review-column">
+					<div class="review-box" id="review-box-1">
+						<p>Voluptates repudiandae sint et accusamus et sunt dolore. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores. Nobis est eligendi optio, cumque nihil impedit. Facere possimus, omnis dolor sit, aspernatur aut perferendis.</p>
+						<div class="author">
+							<img alt="" src="/img/member-1.jpg">
+							<h4>Jody Logan</h4>
+							<p>CEO, First Company</p>
+						</div>
+					</div>
+					<div class="review-box" id="review-box-2">
+						<p>Voluptates repudiandae sint et accusamus et sunt dolore. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores. Nobis est eligendi optio, cumque nihil impedit. Facere possimus, omnis dolor sit, aspernatur aut perferendis.</p>
+						<div class="author">
+							<img alt="" src="/img/member-1.jpg">
+							<h4>Jody Logan</h4>
+							<p>Co-founder, Second Company</p>
+						</div>
+					</div>
+				</div>
+				<div class="customers-box">
+					<h3>OUR CUSTOMERS</h3>
+					<div class="customer-column">
+						<div class="customer-box"><img alt="AT&T" src="/img/att.png"></div>
+						<div class="customer-box"><img alt="AT&T" src="/img/verzion.png"></div>
+						<div class="customer-box"><img alt="AT&T" src="/img/t-mobile.png"></div>
+						<div class="customer-box"><img alt="AT&T" src="/img/sprint.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="buy-now">
+		<div class="container">
+			<div class="row">
+				<div class="buy-box">
+					<h2>BUY THE APPLE WATCH TODAY</h2>
+					<div class="center">
+						<a class="blue-button" href="#products" id="buy-now-button" title="Buy Now">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="title-box">
+					<h2>NEWSLETTER</h2>
+					<p>Iusto odio dignissimos ducimus, qui dolorem. Nihil impedit, quo voluptas assumenda est, qui ratione voluptatem sequi aboriosam, nisi ut perspiciatis nesciunt neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, earum?</p>
+				</div>
+				<div class="email-box">
+					<form action="POST">
+						<input id="newsletter-email" name="newsletter-email" placeholder="Enter you email" type="text"> <button class="button submit-button" id="newsletter-submit" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="section" id="footer">
+		<div class="footer-bg">
+			<div class="footer-bg-img"></div>
+			<div class="footer-bg-overlay"></div><span class="trapeze-footer-bg"></span>
+		</div>
+		<div class="container footer-first-line">
+			<div class="row">
+				<div class="footer-about-column">
+					<img alt="" src="/img/apple-logo.png">
+					<p>Nobis est eligendi optio, cumque nihil molestiae. Ea voluptate velit aliquid ex ea voluptate velit voluptatem accusantium doloremque laudantium esse, quam nihil impedit, quo minus id, quod maxime.</p>
+					<ul class="footer-social-icons">
+						<li>
+							<a href="#" title="Facebook"><i class="im im-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#" title="Twitter"><i class="im im-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#" title="Google Plus"><i class="im im-google-plus"></i></a>
+						</li>
+						<li>
+							<a href="#" title="Instagram"><i class="im im-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-contacts-column">
+					<h2><span class="text-notice">Get In Touch</span></h2>
+					<p>If you have any questions or suggestions, please contact us, or you can come to visit us in our cozy office.</p>
+					<ul>
+						<li><strong>Phone:</strong> (+11) 123-555-4567</li>
+						<li><strong>Email:</strong> mail@example.com</li>
+						<li><strong>Address:</strong> 1465 Mountain St, CA 91104, USA</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="/js/swiper.min.js">
+	</script> 
+	<script src="/js/smartwatch.min.js">
+	</script>
 </body>
-
 </html>

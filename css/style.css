@@ -235,7 +235,7 @@ button {
 
 .modal-content .form-box .order-form .input-box {
     display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
 }
 
@@ -247,7 +247,7 @@ button {
     text-transform: capitalize;
     border: 2px solid #f9ca24;
     background-color: #f9fcfd;
-    display: block;
+    display: inline-block;
     position: relative;
 }
 
@@ -255,7 +255,9 @@ button {
 
 
 .modal-content .form-box .order-form #custom-select {
+    position: relative;
     padding-right: 10px;
+    top: -2px;
 }
 
 
@@ -287,7 +289,7 @@ button {
 }
 
 .modal-content .form-box .order-form .input-box #state {
-    width: 250px;
+    width: 230px;
 
 }
 
@@ -309,8 +311,7 @@ button {
 
 
 .modal-content .form-box .order-form #custom-select select {
-    position: relative;
-    width: 200px;
+    width: 229px;
     height: 3rem;
     padding: 0.75rem;
     border: 2px solid #f9ca24;
