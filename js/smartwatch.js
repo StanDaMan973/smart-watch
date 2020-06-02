@@ -142,44 +142,21 @@ window.onclick = function (event) {
     }
 }
 
+
+
 // form error handling
 let form = document.querySelector('#order-form');
-let firstName = document.querySelector('input[type="text"]#fname');
-let lastName = document.querySelector('input[type="text"]#lname');
-let email = document.querySelector('input[type="email"]#email');
-let address = document.querySelector('input[type="text"]#address');
-let city = document.querySelector('input[type="text"]#city');
-let state = document.querySelector('input[type="text"]#state');
-let zipCode = document.querySelector('input[type="text"]#zip-code');
-let phoneNumber = document.querySelector('input[type="text"]#phone-number');
-let green = '#4BB543';
-let red = '#FF0000';
+
+
+
 
 form.addEventListener('submit', function (e) {
     e.preventDefault;
 
-    checkFields();
+  
 
 });
 
-function checkFields() {
-
-
-    if (firstName.value === '' || firstName.value === null) {
-       
-        
-        
-
-    } else {
-         // activate the success class
-     
-    }
-
-   
-
-}
-checkFields();
- 
 
 
 

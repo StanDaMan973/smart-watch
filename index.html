@@ -74,23 +74,22 @@
                 </div>
             </div>
             <div id="form-box" class="form-box">
-                <form id="order-form" class="order-form" action="#">
+                <form id="order-form" class="order-form"  action="/" method="GET">
                     <h3>Shipping Address</h3>
-                    <div class="input-box" id="first-name" >
-                        <input type="text" id="fname" name="firstname" placeholder="Firstname">
-                        <small>error message</small>
+                    <div class="input-box">
+                        <input type="text" id="fname" name="firstname" placeholder="Firstname" required>
                     </div>
-                    <div class="input-box" id="last-name">
-                        <input type="text" id="lname" name="lastname" placeholder="Lastname">
+                    <div class="input-box">
+                        <input type="text" id="lname" name="lastname" placeholder="Lastname" required>
                     </div>
-                    <div class="input-box" id="email">
-                        <input type="email" id="email" name="email" placeholder="Email">
+                    <div class="input-box">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-                    <div class="input-box" id="address">
-                        <input type="text" id="address" name="address" placeholder="Address">
+                    <div class="input-box">
+                        <input type="text" id="address" name="address" placeholder="Address" required>
                     </div>
-                    <div class="input-box" id="city">
-                        <input type="text" id="city" name="city" placeholder="city">
+                    <div class="input-box">
+                        <input type="text" id="city" name="city" placeholder="city" required>
                     </div>
                     <div class="input-box" id="custom-select">
                         <select>
@@ -103,17 +102,20 @@
                             <option value="6">Dominican Republic</option>
                         </select>
                     </div>
-                    <div class="input-box" id="state">
-                        <input type="text" id="state" name="state" placeholder="state">
+                    <div class="input-box">
+                        <input type="text" id="state" name="state" placeholder="state" required>>
+                      
                     </div>
-                    <div class="input-box" id="zip-code">
-                        <input type="text" id="zip-code" name="zip-code" placeholder="zip-code">
+                    <div class="input-box">
+                        <input type="text" id="zip-code" name="zip-code" placeholder="zip-code" required>>
+                       
                     </div>
-                    <div class="input-box" id="phone-number">
-                        <input type="text" id="phone-number" name="phone-number" placeholder="phone-number">
+                    <div class="input-box">
+                        <input type="text" id="phone-number" name="phone-number" placeholder="phone-number" required>>
+                        
                     </div>
                     <div class="btn-box">
-                        <a href="#products" class="blue-button">Order Now</a>
+                        <button href="#" class="modal-button">Order Now</button>
                     </div>
                 </form>
             </div>
