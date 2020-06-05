@@ -12,6 +12,7 @@ function loadNow(opacity) {
 	}
 }
 
+
 function displayContent() {
 	loader.style.display = 'none';
 }
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	loader = document.querySelector('.loader');
 	loadNow(2);
 });
+
 // intersection Observer
 const header = document.querySelector('header');
 const sectionOne = document.querySelector('#cover');

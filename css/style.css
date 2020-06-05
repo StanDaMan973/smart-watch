@@ -2237,7 +2237,7 @@ header img {
 
     header #navbar ul {
         display: inline-block;
-        width: 100%;
+        width: 80%;
         padding: 0;
         height: 400px;
         max-height: 0;
@@ -2245,10 +2245,10 @@ header img {
         transition: all ease-in-out 0.3s;
         position: absolute;
         top: 50px;
-        left: 0px;
+        left: 80px;
         z-index: 10;
         margin: 0;
-        background: #43bccd;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     header #navbar ul.open {
@@ -2352,14 +2352,14 @@ header img {
 
     .cover-column .img-box {
         text-align: center;
-        margin-top: 6%;
-        margin-left: 0%;
+        margin-top: 5%;
+        margin-left: -6%;
         margin-right: 0%;
         z-index: 5;
     }
 
     .cover-column .img-box img {
-        width: 18rem;
+        width: 20rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -2799,11 +2799,17 @@ header img {
 
 @media only screen and (max-width: 767px) {
 
-
-
-    #cover {
-        height: 100%;
+    header #navbar ul {
+ 
+        width: 80%;
+        top: 50px;
+        left: 45px;
+       
+        
     }
+
+
+
 
     .cover-box {
         text-align: center;
@@ -2815,8 +2821,26 @@ header img {
         font-size: 37px;
     }
 
+   
+
+    #cover {
+        height: 650px;
+    }
+
     .cover-column .img-box {
-        margin-top: 10%;
+        text-align: center;
+        margin-top: 14%;
+        margin-left: -10%;
+        margin-right: 0%;
+        z-index: 5;
+    }
+
+    .cover-column .img-box img {
+        width: 16rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     #about {
@@ -3144,31 +3168,38 @@ header img {
 }
 
 
-@media only screen and (max-width: 499px) {
 
+
+@media only screen and (max-width: 499px) {
     header #navbar ul {
-        display: inline-block;
-        width: 84%;
-        padding: 0;
-        height: 400px;
-        max-height: 0;
-        overflow: hidden;
-        transition: all ease-in-out 0.3s;
-        position: absolute;
+ 
+        width: 80%;
         top: 50px;
-        left: 32px;
-        z-index: 10;
-        margin: 0;
-        background: #43bccd;
+        left: 36px;
     }
 
+
+    #cover {
+        height: 700px;
+    }
+    
     .cover-column .img-box {
-        margin-left: -1%;
+        text-align: center;
+        margin-top: 14%;
+        margin-left: -12%;
+        margin-right: 0%;
+        z-index: 5;
     }
 
     .cover-column .img-box img {
-        width: 14rem;
+        width: 16rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
     }
+
+    
 
     #about .img-column .img-box img {
         width: 22rem;
@@ -3230,8 +3261,14 @@ header img {
         width: 100%;
     }
 
+    
+
     #newsletter .email-box form {
         padding-left: 2px;
+    }
+
+    #newsletter .email-box form input {
+        width: 46%;
     }
 
 
@@ -3273,6 +3310,26 @@ header img {
 }
 
 @media only screen and (max-width: 400px) {
+
+    header #navbar ul {
+        width: 80%;
+        top: 50px;
+        left: 32px;
+    }
+
+    #cover {
+        height: 720px;
+    }
+
+    .cover-column .img-box {
+        text-align: center;
+        margin-top: 15%;
+        margin-left: -14%;
+        margin-right: 0%;
+        z-index: 5;
+    }
+    
+
 
     #feature-1 .feature-1-column .img-box {
         text-align: center;
@@ -3319,7 +3376,7 @@ header img {
     }
 
     #newsletter .email-box form input {
-        width: 42%;
+        width: 40%;
     }
 
     #newsletter .email-box form {
@@ -3352,8 +3409,38 @@ header img {
 
 @media only screen and (max-width: 370px) {
 
+    header #navbar ul {
+        width: 80%;
+        top: 50px;
+        left: 26px;
+    }
+
+    #cover {
+        height: 820px;
+    }
+    
+    .cover-column .img-box {
+        text-align: center;
+        margin-top: 18%;
+        margin-left: -17%;
+        margin-right: 0%;
+        z-index: 5;
+    }
+
+    .cover-column .img-box img {
+        width: 16rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
     #about .img-column .img-box img {
         width: 18rem;
+    }
+
+    #newsletter .email-box form input {
+        width: 30%;
     }
 
 
