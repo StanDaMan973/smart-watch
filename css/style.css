@@ -1,6 +1,13 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans&display=swap');
 
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(/fonts/SourceSansPro-Regular.ttf);
+  }
+
+
 html {
 
     scroll-behavior: smooth;
@@ -20,6 +27,8 @@ a,
 button {
     cursor: pointer;
 }
+
+
 
 .blue-button {
     /* background-color: #34b1c3;
@@ -558,8 +567,8 @@ header img {
 }
 
 .cover-box p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: SourceSansPro;
+    font-size: 16px;
     color: #000000;
     padding-bottom: 20px;
     line-height: 1.6rem;
@@ -611,8 +620,8 @@ header img {
 }
 
 #about .about-column .about-box p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-family: SourceSansPro;
+    font-size: 16px;
     line-height: 1.6rem;
 }
 
@@ -648,13 +657,13 @@ header img {
     font-family: 'Montserrat', sans-serif;
     color: #f2f2f2;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
 #tech .tech-box p {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     color: #f2f2f2;
     font-weight: 100;
     margin-bottom: 30px;
@@ -723,10 +732,10 @@ header img {
 }
 
 #quick .text-column .text-box p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     line-height: 1.6rem;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -771,10 +780,10 @@ header img {
 }
 
 #instant .text-column .text-box p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     line-height: 1.6rem;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -814,9 +823,9 @@ header img {
 }
 
 #feature-2 .feature-2-box p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     line-height: 30px;
     font-weight: 400;
     word-wrap: break-word
@@ -888,7 +897,7 @@ header img {
 
 #feature-2 .feature-2-column .box-column-1 .box p {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 400;
     line-height: 26px;
     word-wrap: break-word
@@ -912,7 +921,7 @@ header img {
 
 #feature-2 .feature-2-column .box-column-2 .box p {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 400;
     line-height: 26px;
 }
@@ -969,7 +978,7 @@ header img {
 
 #gallery .gallery-content p {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -1088,8 +1097,8 @@ header img {
 }
 
 #products .product-box p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: SourceSansPro;
+    font-size: 16px;
     line-height: 3rem;
     font-weight: 400;
     text-align: center;
@@ -1194,8 +1203,8 @@ header img {
 }
 
 #products-2 .product-box p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: SourceSansPro;
+    font-size: 16px;
     line-height: 3rem;
     font-weight: 400;
     text-align: center;
@@ -1300,8 +1309,8 @@ header img {
 }
 
 #sale .sale-box p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: SourceSansPro;
+    font-size: 16px;
     line-height: 3rem;
     font-weight: 400;
 }
@@ -1486,9 +1495,9 @@ header img {
 }
 
 #FAQ .faq-box p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 16px;
     width: 80%;
     margin: 0 auto;
     line-height: 24px;
@@ -1514,9 +1523,9 @@ header img {
 }
 
 #FAQ .faq-column .column p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 24px;
     text-align: justify;
 }
@@ -1570,9 +1579,9 @@ header img {
 }
 
 #download .download-box .colum-1 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 24px;
     color: #ffffff;
 
@@ -1636,18 +1645,11 @@ header img {
 }
 
 
-#team-members .team-box p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-
-}
 
 #team-members .team-column {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 40px;
+    margin-top: 10px;
 
 }
 
@@ -1745,8 +1747,8 @@ header img {
 
 
 #reviews .title-box p {
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-family: SourceSansPro;
     font-weight: 400;
     color: #000000;
     text-align: center;
@@ -1769,8 +1771,8 @@ header img {
 }
 
 #reviews .review-column .review-box p {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-family: SourceSansPro;
     font-weight: 400;
     color: #000000;
     line-height: 26px;
@@ -1836,40 +1838,6 @@ header img {
 
 }
 
-/* buy-now section */
-
-#buy-now {
-    height: 18rem;
-    max-width: 100%;
-    background-color: #43bccd;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23610de8' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-
-#buy-now .buy-box h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 25px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #ffffff;
-
-}
-
-#buy-now .buy-box {
-    padding-top: 6rem;
-}
-
-#buy-now .buy-box .center {
-    text-align: center;
-}
-
-#buy-now .buy-box .center #buy-now-button {
-    background-color: #f9c80e;
-    padding: 0.50rem 2.2rem;
-
-}
 
 /*********************** Newsletter **************************/
 
@@ -1895,11 +1863,11 @@ header img {
 }
 
 #newsletter .title-box p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     padding: 0 40px;
     line-height: 28px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: SourceSansPro;
     margin-bottom: 2rem;
     color: #000000;
 }
@@ -2027,8 +1995,8 @@ header img {
 }
 
 #footer .container .row .footer-about-column p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: SourceSansPro;
+    font-size: 16px;
     line-height: 1.5rem;
     color: #ffffff;
     margin-bottom: 1.5rem;
@@ -2097,8 +2065,8 @@ header img {
 
 #footer .container .row .footer-contacts-column p {
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: SourceSansPro;
+    font-size: 16px;
     margin-bottom: 1rem;
     line-height: 26px;
     font-weight: 300;
@@ -3083,24 +3051,7 @@ header img {
         width: 80%;
     }
 
-    #buy-now .buy-box {
-        padding-top: 4rem;
-    }
-
-    #buy-now .buy-box {
-        padding-top: 3.5rem;
-    }
-
-    #buy-now .buy-box h2 {
-        font-size: 2.5rem;
-        font-weight: 600;
-        line-height: 45px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        margin-bottom: 2rem;
-        color: #ffffff;
-    }
-
+   
 
     #newsletter .email-box form input {
         width: 50%;
@@ -3367,10 +3318,7 @@ header img {
         width: 300px;
     }
 
-    #buy-now .buy-box h2 {
-        font-size: 2rem;
-    }
-
+   
     #newsletter .email-box form input {
         width: 40%;
     }
