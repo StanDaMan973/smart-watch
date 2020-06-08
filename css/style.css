@@ -643,7 +643,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 520px;
 }
 
 
@@ -674,6 +674,7 @@ header img {
 #tech .tech-column {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
 }
 
 #tech .tech-column .box {
@@ -1858,7 +1859,7 @@ header img {
     font-size: 36px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #000000;
 }
 
@@ -1868,7 +1869,6 @@ header img {
     padding: 0 40px;
     line-height: 28px;
     font-family: SourceSansPro;
-    margin-bottom: 2rem;
     color: #000000;
 }
 
